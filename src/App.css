@@ -73,6 +73,7 @@ header {
   background-size: cover;
   position: relative;
   z-index: 5;
+  overflow: hidden;
 }
 
 header .head_block {
@@ -345,6 +346,7 @@ header .header_mob.active {
   background-image: url(../src/assets/images/home-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .home_block {
@@ -550,6 +552,7 @@ header .header_mob.active {
 .about {
   padding: 70px 0px 60px;
   background-image: url(../src/assets/images/bg-grey.png);
+  overflow: hidden;
 }
 
 .about .about_block {
@@ -684,6 +687,7 @@ header .header_mob.active {
   background-image: url(../src/assets/images/home-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .portfolio .title {
@@ -839,6 +843,7 @@ header .header_mob.active {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 105px 0;
+  overflow: hidden;
 }
 
 .services .block {
@@ -905,6 +910,7 @@ header .header_mob.active {
 .testimonials {
   background-image: url(../src/assets/images/bg-grey.png);
   padding: 142px 0px 146px;
+  overflow: hidden;
 }
 
 .testimonials .block {
@@ -1047,6 +1053,7 @@ header .header_mob.active {
 .work {
   padding: 89px 0px 90px;
   background: var(--black-light);
+  overflow: hidden;
 }
 
 .work .block {
@@ -1089,6 +1096,7 @@ header .header_mob.active {
 .contact {
   padding: 81px 0px 86px;
   background: var(--grey3);
+  overflow: hidden;
 }
 
 .contact .contact_block {
@@ -1192,6 +1200,7 @@ header .header_mob.active {
 footer {
   padding: 62px 0px 61px;
   background: var(--grey);
+  overflow: hidden;
 }
 
 footer .footer_block {
