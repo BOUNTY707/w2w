@@ -22,7 +22,7 @@ export default function PortfolioSection() {
   };
 
 
-  const images = [portfolioImg1, portfolioImg2, portfolioImg3, portfolioImg1, portfolioImg2, portfolioImg3, portfolioImg1, portfolioImg2, portfolioImg3];
+  const images = [portfolioImg1, portfolioImg2, portfolioImg3, portfolioImg1, portfolioImg2, portfolioImg3];
 
   return (
     <div className="portfolio" id="portfolio">
@@ -32,17 +32,11 @@ export default function PortfolioSection() {
         </h2>
         <div className="block">
           {images.map((img, index) => (
-            <a href="#!" key={index} className={`portfolio_img ${index >= 6 && !showAll ? "none" : ""}`} data-aos="fade-up">
+            <a href="#!" key={index} className="portfolio_img" data-aos="fade-up">
               <img src={img} alt="" />
             </a>
           ))}
         </div>
-
-        {!showAll && (
-          <a href="#!" className="portfolio_more" onClick={handleShowMore} data-aos="fade-up">
-            Get to know more
-          </a>
-        )}
       </div>
     </div>
   );

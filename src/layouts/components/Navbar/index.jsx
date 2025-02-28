@@ -96,9 +96,6 @@ export default function Navbar() {
                 <button className={`tab ${selectedLang === "RU" ? "active" : ""}`} onClick={() => changeLanguage("RU")}>
                   RU
                 </button>
-                <button className={`tab ${selectedLang === "UZ" ? "active" : ""}`} onClick={() => changeLanguage("UZ")}>
-                  UZ
-                </button>
               </div>
             </div>
 

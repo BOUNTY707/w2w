@@ -27,7 +27,7 @@ export default function ProductiveSection() {
               typesetting industry. Lorem Ipsum{" "}
             </p>
             <a
-              href="#!"
+              href="#contact"
               className="productive_link"
               data-aos="fade-up"
             >

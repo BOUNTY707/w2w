@@ -19,7 +19,7 @@ export default function HomeSection() {
                 <span>Win to Win</span> solutions with digital transformation
               </h1>
               <a
-                href="#!"
+                href="#contact"
                 className="home_btn"
                 data-aos="fade-up"
               >
