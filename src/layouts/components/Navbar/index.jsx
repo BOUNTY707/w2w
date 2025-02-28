@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 // Images
 import logo from "../../../assets/images/logo.svg";
@@ -101,8 +103,7 @@ export default function Navbar() {
             </div>
 
             <button className={`bars ${headIsActive ? "active" : ""}`} onClick={toggleMenu}>
-              <img src={bars} alt="" className={`bars_img ${headIsActive ? "hidden" : ""}`} />
-              <img src={close} alt="" className={`close_img ${headIsActive ? "" : "hidden"}`} />
+              <FontAwesomeIcon icon={headIsActive ? faTimes : faBars} />
             </button>
           </div>
         </div>

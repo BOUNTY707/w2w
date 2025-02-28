@@ -1,10 +1,31 @@
-import React from "react";
-//images
+import React, { useRef, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
+// images
 import avatar from "../../assets/images/avatar.svg";
 import plus from "../../assets/images/plus.svg";
-import play from "../../assets/images/play.svg";
+import videoWork from "../../assets/videos/work-video.mp4";
 
 export default function AboutSection() {
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handlePlayPause = () => {
+    if (videoRef.current) {
+      if (videoRef.current.paused) {
+        videoRef.current.play();
+        setIsPlaying(true);
+      } else {
+        videoRef.current.pause();
+        setIsPlaying(false);
+      }
+    }
+  };
+
+  const handleVideoEnd = () => {
+    setIsPlaying(false); // Video tugaganda play icon qayta chiqadi
+  };
+
   return (
     <div className="about" id="about">
       <div className="container">
@@ -51,21 +72,12 @@ export default function AboutSection() {
 
             <div className="about_video" data-aos="fade-left">
               <div className="video">
-                <h3>HOW WE WORK</h3>
+                <video ref={videoRef} onEnded={handleVideoEnd}>
+                  <source src={videoWork} type="video/mp4" />
+                </video>
               </div>
-              <button className="play_btn">
-                <svg
-                  width="36"
-                  height="38"
-                  viewBox="0 0 36 38"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M32.2499 14.1472C33.1304 14.6155 33.867 15.3145 34.3806 16.1693C34.8942 17.0242 35.1656 18.0027 35.1656 19C35.1656 19.9973 34.8942 20.9759 34.3806 21.8307C33.867 22.6856 33.1304 23.3846 32.2499 23.8529L8.76121 36.6257C4.97904 38.6827 0.333374 36.006 0.333374 31.7747V6.2272C0.333374 1.9922 4.97904 -0.682632 8.76121 1.37253L32.2499 14.1472Z"
-                    fill="#5C5D5F"
-                  />
-                </svg>
+              <button className="play_btn" onClick={handlePlayPause}>
+                <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} />
               </button>
             </div>
           </div>
