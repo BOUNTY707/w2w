@@ -22,11 +22,10 @@ export default function TestimonialsSection() {
           <h2
             className="main_title title"
             data-aos="fade-down"
-            data-aos-duration="600"
           >
             <span>Testimo</span>nials
           </h2>
-          <div className="slider" data-aos="fade-up" data-aos-duration="600">
+          <div className="slider" data-aos="fade-up">
             <Swiper
               onSwiper={(swiper) => (swiperRef.current = swiper)}
               modules={[Navigation, Pagination]}

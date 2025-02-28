@@ -18,7 +18,6 @@ export default function ServicesSection() {
           <h2
             className="main_title title"
             data-aos="zoom-out"
-            data-aos-duration="600"
           >
             <span>Servic</span>es
           </h2>
@@ -29,7 +28,6 @@ export default function ServicesSection() {
                 href="#!"
                 className="card"
                 data-aos="zoom-in"
-                data-aos-duration="600"
               >
                 <h4>CRM Systems</h4>
                 <img src={servicesIcon1} alt="" />
@@ -38,7 +36,6 @@ export default function ServicesSection() {
                 href="#!"
                 className="card"
                 data-aos="zoom-in"
-                data-aos-duration="700"
               >
                 <h4>Branding</h4>
                 <img src={servicesIcon2} alt="" />
@@ -47,7 +44,6 @@ export default function ServicesSection() {
                 href="#!"
                 className="card"
                 data-aos="zoom-in"
-                data-aos-duration="800"
               >
                 <h4>AI</h4>
                 <img src={servicesIcon3} alt="" />
@@ -58,7 +54,6 @@ export default function ServicesSection() {
                 href="#!"
                 className="card"
                 data-aos="zoom-in"
-                data-aos-duration="600"
               >
                 <h4>Smart House</h4>
                 <img src={servicesIcon4} alt="" />
@@ -67,7 +62,6 @@ export default function ServicesSection() {
                 href="#!"
                 className="card"
                 data-aos="zoom-in"
-                data-aos-duration="700"
               >
                 <h4>Hardware Supply</h4>
                 <img src={servicesIcon5} alt="" />
@@ -76,7 +70,6 @@ export default function ServicesSection() {
                 href="#!"
                 className="card"
                 data-aos="zoom-in"
-                data-aos-duration="800"
               >
                 <h4>Web Development</h4>
                 <img src={servicesIcon6} alt="" />
@@ -87,7 +80,6 @@ export default function ServicesSection() {
                 href="#!"
                 className="card"
                 data-aos="zoom-in"
-                data-aos-duration="600"
               >
                 <h4>UX/UI</h4>
                 <img src={servicesIcon7} alt="" />
@@ -96,7 +88,6 @@ export default function ServicesSection() {
                 href="#!"
                 className="card"
                 data-aos="zoom-in"
-                data-aos-duration="800"
               >
                 <h4>Mobile Apps</h4>
                 <img src={servicesIcon8} alt="" />

@@ -15,14 +15,13 @@ export default function HomeSection() {
         <div className="home_block">
           <div className="info">
             <div className="title_wrap">
-              <h1 className="title" data-aos="fade-up" data-aos-duration="800">
+              <h1 className="title" data-aos="fade-up">
                 <span>Win to Win</span> solutions with digital transformation
               </h1>
               <a
                 href="#!"
                 className="home_btn"
                 data-aos="fade-up"
-                data-aos-duration="800"
               >
                 Start your project <img src={arrowRight} alt="" />
               </a>
@@ -31,7 +30,6 @@ export default function HomeSection() {
             <div
               className="partners"
               data-aos="fade-up"
-              data-aos-duration="800"
             >
               <p>Trusted by the world's biggest brands</p>
               <div className="partners_logo">
@@ -48,7 +46,7 @@ export default function HomeSection() {
             </div>
           </div>
 
-          <div className="traffic" data-aos="fade-up" data-aos-duration="800">
+          <div className="traffic" data-aos="fade-up">
             <div className="top">
               <div className="home_img">
                 <div className="img-icon">

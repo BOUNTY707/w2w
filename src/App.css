@@ -101,6 +101,9 @@ header .head_block {
   letter-spacing: -5%;
   color: var(--black);
 }
+.head_block .logo span{
+  transition: 0s;
+}
 
 .head_block .links {
   display: flex;

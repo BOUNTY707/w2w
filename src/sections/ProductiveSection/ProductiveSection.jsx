@@ -19,10 +19,10 @@ export default function ProductiveSection() {
       <div className="container">
         <div className="block">
           <div className="info">
-            <h2 className="title" data-aos="fade-up" data-aos-duration="600">
+            <h2 className="title" data-aos="fade-up">
               We provide the most <br /> <span>productive solutions.</span>
             </h2>
-            <p className="text" data-aos="fade-up" data-aos-duration="800">
+            <p className="text" data-aos="fade-up">
               Lorem Ipsum is simply dummy text of the <br /> printing and
               typesetting industry. Lorem Ipsum{" "}
             </p>
@@ -30,7 +30,6 @@ export default function ProductiveSection() {
               href="#!"
               className="productive_link"
               data-aos="fade-up"
-              data-aos-duration="850"
             >
               Let’s start your project
             </a>
@@ -55,7 +54,6 @@ export default function ProductiveSection() {
               }}
               modules={[Autoplay]}
               data-aos="fade-left"
-              data-aos-duration="600"
             >
               {[productiveImg1, productiveImg2, productiveImg3, productiveImg4, productiveImg5, productiveImg6].map(
                 (img, index) => (
@@ -85,7 +83,6 @@ export default function ProductiveSection() {
               }}
               modules={[Autoplay]}
               data-aos="fade-up"
-              data-aos-duration="600"
             >
               {[productiveImg1, productiveImg2, productiveImg3, productiveImg4, productiveImg5, productiveImg6].map(
                 (img, index) => (

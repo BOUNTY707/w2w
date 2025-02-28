@@ -16,10 +16,10 @@ export default function ContactSection() {
     <div className="contact" id="contact">
       <div className="container">
         <div className="contact_block">
-          <h2 className="title" data-aos="fade-down" data-aos-duration="600">
+          <h2 className="title" data-aos="fade-down">
             Contact to us
           </h2>
-          <form action="" data-aos="fade-up" data-aos-duration="600">
+          <form action="" data-aos="fade-up">
             <div className="form_groups">
               <div className="form_group">
                 <div className="inp_group">

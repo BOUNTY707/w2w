@@ -27,19 +27,19 @@ export default function PortfolioSection() {
   return (
     <div className="portfolio" id="portfolio">
       <div className="container">
-        <h2 className="main_title title" data-aos="fade-down" data-aos-duration="600">
+        <h2 className="main_title title" data-aos="fade-down">
           <span>Port</span>folio
         </h2>
         <div className="block">
           {images.map((img, index) => (
-            <a href="#!" key={index} className={`portfolio_img ${index >= 6 && !showAll ? "none" : ""}`} data-aos="fade-up" data-aos-duration={`${600 + (index % 3) * 200}`}>
+            <a href="#!" key={index} className={`portfolio_img ${index >= 6 && !showAll ? "none" : ""}`} data-aos="fade-up">
               <img src={img} alt="" />
             </a>
           ))}
         </div>
 
         {!showAll && (
-          <a href="#!" className="portfolio_more" onClick={handleShowMore} data-aos="fade-up" data-aos-duration="600">
+          <a href="#!" className="portfolio_more" onClick={handleShowMore} data-aos="fade-up">
             Get to know more
           </a>
         )}
