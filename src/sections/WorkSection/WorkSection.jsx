@@ -1,22 +1,19 @@
-import React from "react";
-
-// Images
-import arrowRightBlack from "../../assets/images/arrow-right-black.svg";
+import React, { useContext } from "react";
+import { LanguageContext } from "../../translation/context/LanguageContext";
 
 
 export default function WorkSection() {
+  const { translations } = useContext(LanguageContext);
+  
   return (
     <div className="work">
       <div className="container">
         <div className="block">
-          <h2
-            className="work_title"
-            data-aos="fade-right"
-          >
-            Let’s <span>start working!</span>
+          <h2 className="work_title" data-aos="fade-right">
+            {translations["work.title"]} <span>{translations["work.title.spn"]}</span>
           </h2>
           <a href="#contact" className="work_btn" data-aos="fade-left" >
-            Get Started 
+            {translations["work.btn"]} 
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 12H19" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               <path d="M12 5L19 12L12 19" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

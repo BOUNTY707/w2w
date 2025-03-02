@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LanguageContext } from "../../../translation/context/LanguageContext";
 
 // Images
 import logo from "../../../assets/images/logo.svg";
@@ -10,6 +11,7 @@ import phone from "../../../assets/images/phone.svg";
 import copyright from "../../../assets/images/copyright.svg";
 
 export default function Footer() {
+  const { translations } = useContext(LanguageContext);
   return (
     <footer>
       <div className="container">
@@ -24,11 +26,10 @@ export default function Footer() {
               W2W
             </a>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum{" "}
+              {translations["footer.desc"]}
             </p>
             <div className="social_links">
-              <b>Social media:</b>
+              <b>{translations["footer.social"]}</b>
               <div className="social_link">
                 <a href="#!">
                   <img src={instagram} alt="" />
@@ -49,19 +50,19 @@ export default function Footer() {
             data-aos-duration="750"
           >
             <li>
-              <a href="#home">Home</a>
+              <a href="#home">{translations["footer.home"]}</a>
             </li>
             <li>
-              <a href="#about">About us</a>
+              <a href="#about">{translations["footer.about"]}</a>
             </li>
             <li>
-              <a href="#portfolio">Portfolio</a>
+              <a href="#portfolio">{translations["footer.portfolio"]}</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact">{translations["footer.contact"]}</a>
             </li>
             <li>
-              <a href="#testimonials">Testimonials</a>
+              <a href="#testimonials">{translations["footer.testimonials"]}</a>
             </li>
           </ul>
 
@@ -80,7 +81,7 @@ export default function Footer() {
             </a>
             <a href="#!" className="ftr_link">
               <img src={copyright} alt="" />
-              Copy right W2W
+              {translations["footer.copyRight"]}
             </a>
           </div>
         </div>

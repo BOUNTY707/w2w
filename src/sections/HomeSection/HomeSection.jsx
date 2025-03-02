@@ -1,14 +1,53 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { LanguageContext } from "../../translation/context/LanguageContext";
 
 // Images
 import arrowRight from "../../assets/images/arrow-right.svg";
 import companyLogo1 from "../../assets/images/company-logo1.svg";
 import companyLogo2 from "../../assets/images/company-logo2.svg";
 import companyLogo3 from "../../assets/images/company-logo3.svg";
-import homeImg from "../../assets/images/home-img2.png";
-import analizImg from "../../assets/images/analiz-img.svg";
 
 export default function HomeSection() {
+  const { translations } = useContext(LanguageContext);
+  // Counter
+  const [count, setCount] = useState(0);
+  const finalNumber = 20;
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCount((prev) => {
+        if (prev < finalNumber) {
+          return prev + 1;
+        } else {
+          clearInterval(interval);
+          return prev;
+        }
+      });
+    }, 50);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  // Progress bar
+  const [width, setWidth] = useState("0%");
+
+  useEffect(() => {
+    setTimeout(() => {
+      setWidth("65%");
+    }, 200);
+  }, []);
+
+  // Analiz bar
+  const [height1, setHeight1] = useState("0px");
+  const [height2, setHeight2] = useState("0px");
+  const [height3, setHeight3] = useState("0px");
+
+  useEffect(() => {
+    setTimeout(() => setHeight1("95px"), 200);
+    setTimeout(() => setHeight2("136px"), 400);
+    setTimeout(() => setHeight3("166px"), 600);
+  }, []);
+
   return (
     <div className="home" id="home">
       <div className="container">
@@ -16,22 +55,15 @@ export default function HomeSection() {
           <div className="info">
             <div className="title_wrap">
               <h1 className="title" data-aos="fade-up">
-                <span>Win to Win</span> solutions with digital transformation
+                <span>Win to Win</span> {translations["home.title"]}
               </h1>
-              <a
-                href="#contact"
-                className="home_btn"
-                data-aos="fade-up"
-              >
-                Start your project <img src={arrowRight} alt="" />
+              <a href="#contact" className="home_btn" data-aos="fade-up">
+                {translations["home.btn"]} <img src={arrowRight} alt="" />
               </a>
             </div>
 
-            <div
-              className="partners"
-              data-aos="fade-up"
-            >
-              <p>Trusted by the world's biggest brands</p>
+            <div className="partners" data-aos="fade-up">
+              <p>{translations["partners.desc"]}:</p>
               <div className="partners_logo">
                 <a href="#!">
                   <img src={companyLogo1} alt="" />
@@ -50,18 +82,35 @@ export default function HomeSection() {
             <div className="top">
               <div className="home_img">
                 <div className="img-icon">
-                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M46 12L27 31L17 21L2 36" stroke="black" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M34 12H46V24" stroke="black" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 48 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M46 12L27 31L17 21L2 36"
+                      stroke="black"
+                      strokeWidth="4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M34 12H46V24"
+                      stroke="black"
+                      strokeWidth="4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 </div>
-                <img src={homeImg}alt="" />
               </div>
               <div className="box">
-                <b>20+</b>
-                <h4>Major projects</h4>
+                <b id="numTotal">{count}+</b>
+                <h4>{translations["traffic.title"]}</h4>
                 <div className="line">
-                  <div className="bg"></div>
+                  <div className="bg" style={{ width }}></div>
                 </div>
               </div>
             </div>
@@ -69,13 +118,17 @@ export default function HomeSection() {
             <div className="item">
               <div className="item_info">
                 <p>
-                  <span></span> Drive More Traffic and Sales{" "}
+                  <span></span> {translations["traffic.sales"]}
                 </p>
                 <h3>
-                  Drive <span>more traffic</span> and product sales{" "}
+                  {translations["traffic.more"]}
                 </h3>
               </div>
-              <img src={analizImg} alt="" />
+              <div className="analiz_bar">
+                <div className="bar1" style={{ height: height1 }}></div>
+                <div className="bar2" style={{ height: height2 }}></div>
+                <div className="bar3" style={{ height: height3 }}></div>
+              </div>
             </div>
           </div>
         </div>

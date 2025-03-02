@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { LanguageContext } from "../../../translation/context/LanguageContext";
 
 // Images
 import logo from "../../../assets/images/logo.svg";
-import bars from "../../../assets/images/bars.png";
-import close from "../../../assets/images/close.png";
 import lightModeIcon from "../../../assets/images/mode-light.png";
 import darkModeIcon from "../../../assets/images/dark-mode.webp";
 
 export default function Navbar() {
+  const { language, setLanguage, translations } = useContext(LanguageContext);
+
   // Menu state
   const [headIsActive, setHeadIsActive] = useState(false);
   const toggleMenu = () => {
@@ -37,7 +38,6 @@ export default function Navbar() {
     } else {
       document.body.classList.remove("no-scroll");
     }
-    
     return () => {
       document.body.classList.remove("no-scroll");
     };
@@ -45,35 +45,31 @@ export default function Navbar() {
 
   // Language state
   const [langIsActive, setLangIsActive] = useState(false);
-  const [selectedLang, setSelectedLang] = useState("EN");
 
   const toggleLanguage = () => {
     setLangIsActive(!langIsActive);
   };
+
   const changeLanguage = (lang) => {
-    setSelectedLang(lang); 
+    setLanguage(lang); 
     setLangIsActive(false);
   };
 
   return (
     <header className={headIsActive ? "header active" : "header"}>
       <div className="container">
-        <div
-          className="head_block"
-          data-aos="fade-down"
-          data-aos-duration="600"
-        >
+        <div className="head_block" data-aos="fade-down" data-aos-duration="600">
           <div className="navs">
             <a href="index.html" className="logo">
               <img src={logo} alt="" /> <span>W2W</span>
             </a>
 
             <div className="links">
-              <a href="#home">Home</a>
-              <a href="#about">About us</a>
-              <a href="#portfolio">Portfolio</a>
-              <a href="#contact">Contact</a>
-              <a href="#testimonials">Testimonials</a>
+              <a href="#home">{translations["nav.link.home"]}</a>
+              <a href="#about">{translations["nav.link.about"]}</a>
+              <a href="#portfolio">{translations["nav.link.portfolio"]}</a>
+              <a href="#contact">{translations["nav.link.contact"]}</a>
+              <a href="#testimonials">{translations["nav.link.testimonials"]}</a>
             </div>
           </div>
 
@@ -84,16 +80,17 @@ export default function Navbar() {
             <a href="tel:+998955353555" className="phone">
               +998 95 535 35 55
             </a>
+
             <div className="language_wrap">
-              <a href="#!" className="language" onClick={toggleLanguage}>
-                {selectedLang}
-              </a>
+              <button className="language" onClick={toggleLanguage}>
+                {language === "en" ? "RU" : "EN"}
+              </button>
 
               <div className={`tabs ${langIsActive ? "active" : ""}`}>
-                <button className={`tab ${selectedLang === "EN" ? "active" : ""}`} onClick={() => changeLanguage("EN")}>
+                <button className={`tab ${language === "en" ? "active" : ""}`} onClick={() => changeLanguage("en")}>
                   EN
                 </button>
-                <button className={`tab ${selectedLang === "RU" ? "active" : ""}`} onClick={() => changeLanguage("RU")}>
+                <button className={`tab ${language === "ru" ? "active" : ""}`} onClick={() => changeLanguage("ru")}>
                   RU
                 </button>
               </div>
@@ -108,11 +105,11 @@ export default function Navbar() {
 
       <div className={`header_mob ${headIsActive ? "active" : ""}`}>
         <div className="mob_links">
-          <a href="#home" className="mob_link" onClick={() => setHeadIsActive(false)}>Home</a>
-          <a href="#about" className="mob_link" onClick={() => setHeadIsActive(false)}>About us</a>
-          <a href="#portfolio" className="mob_link" onClick={() => setHeadIsActive(false)}>Portfolio</a>
-          <a href="#contact" className="mob_link" onClick={() => setHeadIsActive(false)}>Contact</a>
-          <a href="#testimonials" className="mob_link" onClick={() => setHeadIsActive(false)}>Testimonials</a>
+          <a href="#home" className="mob_link" onClick={() => setHeadIsActive(false)}>{translations["nav.link.home"]}</a>
+          <a href="#about" className="mob_link" onClick={() => setHeadIsActive(false)}>{translations["nav.link.about"]}</a>
+          <a href="#portfolio" className="mob_link" onClick={() => setHeadIsActive(false)}>{translations["nav.link.portfolio"]}</a>
+          <a href="#contact" className="mob_link" onClick={() => setHeadIsActive(false)}>{translations["nav.link.contact"]}</a>
+          <a href="#testimonials" className="mob_link" onClick={() => setHeadIsActive(false)}>{translations["nav.link.testimonials"]}</a>
         </div>
         <a href="tel:+998955353555" className="phone">+998 95 535 35 55</a>
       </div>

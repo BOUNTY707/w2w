@@ -1,9 +1,11 @@
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { LanguageContext } from "../../translation/context/LanguageContext";
+
 
 // Images
 import testimonialImg from "../../assets/images/person1.webp";
@@ -13,6 +15,8 @@ import arrowRight from "../../assets/images/slide-arrow-right.svg";
 import arrowLeft from "../../assets/images/slide-arrow-left.svg";
 
 export default function TestimonialsSection() {
+  const { translations } = useContext(LanguageContext);
+  
   const swiperRef = useRef(null);
 
   return (
@@ -23,7 +27,7 @@ export default function TestimonialsSection() {
             className="main_title title"
             data-aos="fade-down"
           >
-            <span>Testimo</span>nials
+            <span>{translations["testim.title.spn"]}</span>{translations["testim.title"]}
           </h2>
           <div className="slider" data-aos="fade-up">
             <Swiper
@@ -47,35 +51,35 @@ export default function TestimonialsSection() {
             >
               {[
                 {
-                  name: "Azik Aziko",
-                  position: "UX/UI Designer at IT agency",
-                  text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                  name: translations["testim.card_name"],
+                  position: translations["testim.card_work"],
+                  text: translations["testim.card_desc"],
                   img: testimonialImg,
-                  country: "Uzbekistan",
+                  country: translations["testim.card_country"],
                   flag: uz,
                 },
                 {
-                  name: "John Doe",
-                  position: "Frontend Developer at Tech Corp",
-                  text: "I've had a fantastic experience with this company. The services are outstanding!",
+                  name: translations["testim.card_name"],
+                  position: translations["testim.card_work"],
+                  text: translations["testim.card_desc"],
                   img: testimonialImg,
-                  country: "Uzbekistan",
+                  country: translations["testim.card_country"],
                   flag: uz,
                 },
                 {
-                  name: "Alice Johnson",
-                  position: "Project Manager at StartupX",
-                  text: "Professional team and great results! Highly recommended.",
+                  name: translations["testim.card_name"],
+                  position: translations["testim.card_work"],
+                  text: translations["testim.card_desc"],
                   img: testimonialImg,
-                  country: "Uzbekistan",
+                  country: translations["testim.card_country"],
                   flag: uz,
                 },
                 {
-                  name: "Alice Johnson",
-                  position: "Project Manager at StartupX",
-                  text: "Professional team and great results! Highly recommended.",
+                  name: translations["testim.card_name"],
+                  position: translations["testim.card_work"],
+                  text: translations["testim.card_desc"],
                   img: testimonialImg,
-                  country: "Uzbekistan",
+                  country: translations["testim.card_country"],
                   flag: uz,
                 },
               ].map((item, index) => (

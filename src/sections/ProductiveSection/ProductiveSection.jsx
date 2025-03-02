@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay } from "swiper/modules";
+import { LanguageContext } from "../../translation/context/LanguageContext";
+
 
 // Images
 import productiveImg1 from "../../assets/images/productive_img1.svg";
@@ -14,24 +16,25 @@ import productiveImg5 from "../../assets/images/productive_img5.svg";
 import productiveImg6 from "../../assets/images/productive_img6.svg";
 
 export default function ProductiveSection() {
+    const { translations } = useContext(LanguageContext);
+  
   return (
     <div className="productive">
       <div className="container">
         <div className="block">
           <div className="info">
             <h2 className="title" data-aos="fade-up">
-              We provide the most <br /> <span>productive solutions.</span>
+              {translations["productive.title"]} <br /> <span>{translations["productive.title.spn"]}</span>
             </h2>
             <p className="text" data-aos="fade-up">
-              Lorem Ipsum is simply dummy text of the <br /> printing and
-              typesetting industry. Lorem Ipsum{" "}
+              {translations["productive.desc"]}
             </p>
             <a
               href="#contact"
               className="productive_link"
               data-aos="fade-up"
             >
-              Let’s start your project
+              {translations["productive.btn"]}
             </a>
           </div>
 

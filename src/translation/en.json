@@ -1,0 +1,67 @@
+{
+    "nav.link.home": "Home",
+    "nav.link.about": "About us",
+    "nav.link.portfolio": "Portfolio",
+    "nav.link.contact": "Contact",
+    "nav.link.testimonials": "Testimonials",
+
+    "home.title": "solutions with digital transformation",
+    "home.btn": "Start your project",
+    "partners.desc": "Trusted by the world's biggest brands",
+   
+    "traffic.title": "Major projects",
+    "traffic.sales": "Drive More Traffic and Sales",
+    "traffic.more": "Drive more traffic and product sales",
+
+    "about.title": "About us",
+    "about.desc": "At WIN TO WIN, our goal is to drive technological growth <br> and innovation across Central Asia. As a leading IT outsourcing <br> company, we are committed to delivering cutting-edge solutions <br> that empower businesses and transform industries",
+    "about.teammates": "Teammates",
+
+    "portfolio.title.spn": "Port",
+    "portfolio.title": "folio",
+
+    "productive.title": "We provide the most",
+    "productive.title.spn": "productive solutions.",
+    "productive.desc": "Lorem Ipsum is simply dummy text of th printing and typesetting industry. Lorem Ipsum",
+    "productive.btn": "Let’s start your project",
+
+    "serv.title.spn": "Servic",
+    "serv.title": "es",
+    "serv.card.system": "CRM Systems",
+    "serv.card.brand": "Branding",
+    "serv.card.ai": "AI",
+    "serv.card.smart": "Smart House",
+    "serv.card.hardware": "Hardware Supply",
+    "serv.card.web": "Web Development",
+    "serv.card.ux": "UX/UI",
+    "serv.card.app": "Mobile Apps",
+
+    "testim.title.spn": "Testimo",
+    "testim.title": "nials",
+    "testim.card_country": "Uzbekistan",
+    "testim.card_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum ",
+    "testim.card_name": "Azik Aziko",
+    "testim.card_work": "UX/UI deesigner at IT  agency",
+
+    "work.title": "Let’s",
+    "work.title.spn": "start working!",
+    "work.btn": "Get Started",
+
+    "contact.title": "Contact to us",
+    "form.name": "Your name",
+    "form.email": "Email",
+    "form.phone": "Phone number",
+    "form.company": "Your company",
+    "form.message": "Message for us",
+    "form.btn": "Send",
+
+    "footer.desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum ",
+    "footer.social": "Social media:",
+    "footer.home": "Home",
+    "footer.about": "About us",
+    "footer.portfolio": "Portfolio", 
+    "footer.contact": "Contact",
+    "footer.testimonials": "Testimonials",
+    "footer.copyRight": "Copy right W2W"
+
+}

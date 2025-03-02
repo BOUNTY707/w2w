@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LanguageContext } from "../../translation/context/LanguageContext";
 
 // Images
 import servicesIcon1 from "../../assets/images/services-icon1.svg";
@@ -11,6 +12,8 @@ import servicesIcon7 from "../../assets/images/services-icon7.svg";
 import servicesIcon8 from "../../assets/images/services-icon8.svg";
 
 export default function ServicesSection() {
+  const { translations } = useContext(LanguageContext);
+
   return (
     <div className="services" id="services">
       <div className="container">
@@ -19,7 +22,7 @@ export default function ServicesSection() {
             className="main_title title"
             data-aos="zoom-out"
           >
-            <span>Servic</span>es
+            <span>{translations["serv.title.spn"]}</span>{translations["serv.title"]}
           </h2>
 
           <div className="cards_wrap">
@@ -29,7 +32,7 @@ export default function ServicesSection() {
                 className="card"
                 data-aos="zoom-in"
               >
-                <h4>CRM Systems</h4>
+                <h4>{translations["serv.card.system"]}</h4>
                 <img src={servicesIcon1} alt="" />
               </a>
               <a
@@ -37,7 +40,7 @@ export default function ServicesSection() {
                 className="card"
                 data-aos="zoom-in"
               >
-                <h4>Branding</h4>
+                <h4>{translations["serv.card.brand"]}</h4>
                 <img src={servicesIcon2} alt="" />
               </a>
               <a
@@ -45,7 +48,7 @@ export default function ServicesSection() {
                 className="card"
                 data-aos="zoom-in"
               >
-                <h4>AI</h4>
+                <h4>{translations["serv.card.ai"]}</h4>
                 <img src={servicesIcon3} alt="" />
               </a>
             </div>
@@ -55,7 +58,7 @@ export default function ServicesSection() {
                 className="card"
                 data-aos="zoom-in"
               >
-                <h4>Smart House</h4>
+                <h4>{translations["serv.card.smart"]}</h4>
                 <img src={servicesIcon4} alt="" />
               </a>
               <a
@@ -63,7 +66,7 @@ export default function ServicesSection() {
                 className="card"
                 data-aos="zoom-in"
               >
-                <h4>Hardware Supply</h4>
+                <h4>{translations["serv.card.hardware"]}</h4>
                 <img src={servicesIcon5} alt="" />
               </a>
               <a
@@ -71,7 +74,7 @@ export default function ServicesSection() {
                 className="card"
                 data-aos="zoom-in"
               >
-                <h4>Web Development</h4>
+                <h4>{translations["serv.card.web"]}</h4>
                 <img src={servicesIcon6} alt="" />
               </a>
             </div>
@@ -81,7 +84,7 @@ export default function ServicesSection() {
                 className="card"
                 data-aos="zoom-in"
               >
-                <h4>UX/UI</h4>
+                <h4>{translations["serv.card.ux"]}</h4>
                 <img src={servicesIcon7} alt="" />
               </a>
               <a
@@ -89,7 +92,7 @@ export default function ServicesSection() {
                 className="card"
                 data-aos="zoom-in"
               >
-                <h4>Mobile Apps</h4>
+                <h4>{translations["serv.card.app"]}</h4>
                 <img src={servicesIcon8} alt="" />
               </a>
             </div>

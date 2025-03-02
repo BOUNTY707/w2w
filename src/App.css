@@ -437,6 +437,10 @@ header .header_mob.active {
 
 .traffic .home_img {
   position: relative;
+  background: #07E7B7;
+  border-radius: 1000px 20px 20px 20px;
+  width: 303px;
+  height: 275px;
 }
 
 .home_img .img-icon {
@@ -477,6 +481,7 @@ header .header_mob.active {
   font-size: 40px;
   line-height: 55px;
   color: var(--white);
+  width: 245px;
 }
 
 .traffic .box .line {
@@ -492,8 +497,9 @@ header .header_mob.active {
   top: 0;
   left: 0;
   height: 100%;
-  width: 66%;
+  width: 0%;
   background: var(--green);
+  transition: width 1s ease-in-out;
 }
 
 .traffic .item {
@@ -543,6 +549,26 @@ header .header_mob.active {
 
 .traffic .item_info h3 span {
   color: var(--green);
+}
+.traffic .analiz_bar{
+  width: 227px;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+.analiz_bar div {
+  width: 69px;
+  height: 0;
+  transition: height 1.5s ease-in-out;
+}
+.bar1 {
+  background: #469F8C;
+}
+.bar2 {
+  background: #74DFC8;
+}
+.bar3 {
+  background: #51FFDA;
 }
 
 
@@ -1556,6 +1582,7 @@ footer .footer_contact {
 
   .productive .block {
     align-items: center;
+    gap: 60px;
   }
 
   .productive .info {
@@ -1563,8 +1590,8 @@ footer .footer_contact {
   }
 
   .productive .title {
-    font-size: 44px;
-    line-height: 44px;
+    font-size: 36px;
+    line-height: 40px;
     margin-bottom: 30px;
   }
 
@@ -1743,6 +1770,11 @@ footer .footer_contact {
     max-width: 100%;
     flex-direction: column;
   }
+  .home_block .partners p {
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 200px;
+  }
 
   .traffic .home_img {
     display: none;
@@ -1781,6 +1813,8 @@ footer .footer_contact {
     border-radius: 15px;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    min-height: 308px;
   }
 
   .traffic .item_info {

@@ -1,0 +1,66 @@
+{
+    "nav.link.home": "Главная",
+    "nav.link.about": "О нас",
+    "nav.link.portfolio": "Портфолио",
+    "nav.link.contact": "Контакты",
+    "nav.link.testimonials": "Отзывы",
+
+    "home.title": "решения с цифровой трансформацией",
+    "home.btn": "Начать ваш проект",
+    "partners.desc": "Нам доверяют крупнейшие мировые бренды",
+   
+    "traffic.title": "Крупные проекты",
+    "traffic.sales": "Привлекайте больше трафика и продаж",
+    "traffic.more": "Привлекайте больше трафика и продаж продукции",
+
+    "about.title": "О нас",
+    "about.desc": "В WIN TO WIN наша цель — стимулировать технологический рост <br> и инновации в Центральной Азии. Будучи ведущей компанией <br> в области IT-аутсорсинга, мы стремимся предоставлять <br> передовые решения, которые помогают бизнесу и трансформируют индустрию",
+    "about.teammates": "Команда",
+
+    "portfolio.title.spn": "Порт",
+    "portfolio.title": "фолио",
+
+    "productive.title": "Мы предоставляем самые ",
+    "productive.title.spn": "эффективные решения.",
+    "productive.desc": "Lorem Ipsum - это текст-заполнитель в полиграфии и издательском деле.",
+    "productive.btn": "Начнем ваш проект",
+
+    "serv.title.spn": "Серв",
+    "serv.title": "исы",
+    "serv.card.system": "CRM-системы",
+    "serv.card.brand": "Брендинг",
+    "serv.card.ai": "АИ",
+    "serv.card.smart": "Умный дом",
+    "serv.card.hardware": "Поставка оборудования",
+    "serv.card.web": "Веб-разработка",
+    "serv.card.ux": "UX/UI",
+    "serv.card.app": "Мобильные приложения",
+
+    "testim.title.spn": "Отзы",
+    "testim.title": "вы",
+    "testim.card_country": "Узбекистан",
+    "testim.card_desc": "Lorem Ipsum - это текст-заполнитель в полиграфии и издательском деле.",
+    "testim.card_name": "Азик Азико",
+    "testim.card_work": "UX/UI дизайнер в IT-агентстве",
+
+    "work.title": "Давайте",
+    "work.title.spn": "начнем работать!",
+    "work.btn": "Начать",
+
+    "contact.title": "Свяжитесь с нами",
+    "form.name": "Ваше имя",
+    "form.email": "Электронная почта",
+    "form.phone": "Номер телефона",
+    "form.company": "Ваша компания",
+    "form.message": "Сообщение для нас",
+    "form.btn": "Отправить",
+
+    "footer.desc": "Lorem Ipsum - это текст-заполнитель в полиграфии и издательском деле.",
+    "footer.social": "Социальные сети:",
+    "footer.home": "Главная",
+    "footer.about": "О нас",
+    "footer.portfolio": "Портфолио", 
+    "footer.contact": "Контакты",
+    "footer.testimonials": "Отзывы",
+    "footer.copyRight": "Авторские права W2W"
+}
