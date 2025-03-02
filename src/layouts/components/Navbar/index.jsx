@@ -51,14 +51,18 @@ export default function Navbar() {
   };
 
   const changeLanguage = (lang) => {
-    setLanguage(lang); 
+    setLanguage(lang);
     setLangIsActive(false);
   };
 
   return (
     <header className={headIsActive ? "header active" : "header"}>
       <div className="container">
-        <div className="head_block" data-aos="fade-down" data-aos-duration="600">
+        <div
+          className="head_block"
+          data-aos="fade-down"
+          data-aos-duration="600"
+        >
           <div className="navs">
             <a href="index.html" className="logo">
               <img src={logo} alt="" /> <span>W2W</span>
@@ -69,13 +73,18 @@ export default function Navbar() {
               <a href="#about">{translations["nav.link.about"]}</a>
               <a href="#portfolio">{translations["nav.link.portfolio"]}</a>
               <a href="#contact">{translations["nav.link.contact"]}</a>
-              <a href="#testimonials">{translations["nav.link.testimonials"]}</a>
+              <a href="#testimonials">
+                {translations["nav.link.testimonials"]}
+              </a>
             </div>
           </div>
 
           <div className="head_contact">
             <button className="mode" onClick={() => setDarkMode(!darkMode)}>
-              <img src={darkMode ? lightModeIcon : darkModeIcon} alt="Theme Toggle" />
+              <img
+                src={darkMode ? lightModeIcon : darkModeIcon}
+                alt="Theme Toggle"
+              />
             </button>
             <a href="tel:+998955353555" className="phone">
               +998 95 535 35 55
@@ -83,20 +92,29 @@ export default function Navbar() {
 
             <div className="language_wrap">
               <button className="language" onClick={toggleLanguage}>
-                {language === "en" ? "RU" : "EN"}
+                {language === "en" ? "EN" : "RU"}
               </button>
 
               <div className={`tabs ${langIsActive ? "active" : ""}`}>
-                <button className={`tab ${language === "en" ? "active" : ""}`} onClick={() => changeLanguage("en")}>
+                <button
+                  className={`tab ${language === "en" ? "active" : ""}`}
+                  onClick={() => changeLanguage("en")}
+                >
                   EN
                 </button>
-                <button className={`tab ${language === "ru" ? "active" : ""}`} onClick={() => changeLanguage("ru")}>
+                <button
+                  className={`tab ${language === "ru" ? "active" : ""}`}
+                  onClick={() => changeLanguage("ru")}
+                >
                   RU
                 </button>
               </div>
             </div>
 
-            <button className={`bars ${headIsActive ? "active" : ""}`} onClick={toggleMenu}>
+            <button
+              className={`bars ${headIsActive ? "active" : ""}`}
+              onClick={toggleMenu}
+            >
               <FontAwesomeIcon icon={headIsActive ? faTimes : faBars} />
             </button>
           </div>
@@ -105,13 +123,45 @@ export default function Navbar() {
 
       <div className={`header_mob ${headIsActive ? "active" : ""}`}>
         <div className="mob_links">
-          <a href="#home" className="mob_link" onClick={() => setHeadIsActive(false)}>{translations["nav.link.home"]}</a>
-          <a href="#about" className="mob_link" onClick={() => setHeadIsActive(false)}>{translations["nav.link.about"]}</a>
-          <a href="#portfolio" className="mob_link" onClick={() => setHeadIsActive(false)}>{translations["nav.link.portfolio"]}</a>
-          <a href="#contact" className="mob_link" onClick={() => setHeadIsActive(false)}>{translations["nav.link.contact"]}</a>
-          <a href="#testimonials" className="mob_link" onClick={() => setHeadIsActive(false)}>{translations["nav.link.testimonials"]}</a>
+          <a
+            href="#home"
+            className="mob_link"
+            onClick={() => setHeadIsActive(false)}
+          >
+            {translations["nav.link.home"]}
+          </a>
+          <a
+            href="#about"
+            className="mob_link"
+            onClick={() => setHeadIsActive(false)}
+          >
+            {translations["nav.link.about"]}
+          </a>
+          <a
+            href="#portfolio"
+            className="mob_link"
+            onClick={() => setHeadIsActive(false)}
+          >
+            {translations["nav.link.portfolio"]}
+          </a>
+          <a
+            href="#contact"
+            className="mob_link"
+            onClick={() => setHeadIsActive(false)}
+          >
+            {translations["nav.link.contact"]}
+          </a>
+          <a
+            href="#testimonials"
+            className="mob_link"
+            onClick={() => setHeadIsActive(false)}
+          >
+            {translations["nav.link.testimonials"]}
+          </a>
         </div>
-        <a href="tel:+998955353555" className="phone">+998 95 535 35 55</a>
+        <a href="tel:+998955353555" className="phone">
+          +998 95 535 35 55
+        </a>
       </div>
     </header>
   );
