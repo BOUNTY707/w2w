@@ -1,10 +1,12 @@
 import React, { useContext, useRef } from "react";
 import { LanguageContext } from "../../translation/context/LanguageContext";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css/effect-fade";
+
 
 import portfolioSolohiyat from "../../assets/images/portfolio-solohiyat.png";
 import portfolioMit from "../../assets/images/portfolio-mit.png";
@@ -36,9 +38,10 @@ export default function PortfolioSection() {
         <div className="slider" data-aos="fade-up">
             <Swiper
               onSwiper={(swiper) => (swiperRef.current = swiper)}
-              modules={[Navigation, Pagination]}
+              modules={[Navigation, Pagination, EffectFade]}
               slidesPerView={1}
-              spaceBetween={50}
+              spaceBetween={0}
+              effect="fade"
               loop={true}
               navigation={{
                 nextEl: ".swiper-button-next",

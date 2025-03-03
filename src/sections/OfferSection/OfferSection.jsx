@@ -25,7 +25,6 @@ export default function OfferSection() {
                   <a className="card_tab" href="#!">{translations["card.tab.illustrations"]}</a>
                   <a className="card_tab" href="#!">{translations["card.tab.presentation"]}</a>
                   <a className="card_tab" href="#!">{translations["card.tab.strategy"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.marketing"]}</a>
                   <a className="card_tab" href="#!">{translations["card.tab.design"]}</a>
                 </div>
               </div>
@@ -67,15 +66,15 @@ export default function OfferSection() {
                 <h3>{translations["card.ai"]}</h3>
 
                 <div className="card_tabs">
-                  <a className="card_tab" href="#!">{translations["card.tab.learn"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.optimizers"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.architecture"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.Data"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.activation"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.chatbots"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.translation"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.face"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.manager"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.integrations"]}</a>
                 </div>
               </div>
               <div className="card_info">
-                <p className="card_text">{translations["card.brand.desc"]}</p>
+                <p className="card_text">{translations["card.ai.desc"]}</p>
                 <div className="card_btns">
                   <a className="card_btn" href="#contact">{translations["offer.card.btn"]}</a>
                   <a className="card_arrow" href="#!">
@@ -89,15 +88,16 @@ export default function OfferSection() {
                 <h3>{translations["card.hardware"]}</h3>
 
                 <div className="card_tabs">
-                  <a className="card_tab" href="#!">{translations["card.tab.components"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.periphery"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.server"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.enterprise"]}</a>
                   <a className="card_tab" href="#!">{translations["card.tab.network"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.pc"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.solution"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.computer"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.security"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.it"]}</a>
                 </div>
               </div>
               <div className="card_info">
-                <p className="card_text">{translations["card.brand.desc"]}</p>
+                <p className="card_text">{translations["card.hardwer.desc"]}</p>
                 <div className="card_btns">
                   <a className="card_btn" href="#contact">{translations["offer.card.btn"]}</a>
                   <a className="card_arrow" href="#!">
@@ -112,14 +112,15 @@ export default function OfferSection() {
 
                 <div className="card_tabs">
                   <a className="card_tab" href="#!">{translations["card.tab.customer"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.marketing"]}</a>
                   <a className="card_tab" href="#!">{translations["card.tab.sales"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.strategy"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.reports"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.workflow"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.data"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.integration"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.report"]}</a>
                 </div>
               </div>
               <div className="card_info">
-                <p className="card_text">{translations["card.brand.desc"]}</p>
+                <p className="card_text">{translations["card.system.desc"]}</p>
                 <div className="card_btns">
                   <a className="card_btn" href="#contact">{translations["offer.card.btn"]}</a>
                   <a className="card_arrow" href="#!">
@@ -130,19 +131,19 @@ export default function OfferSection() {
             </div>
             <div className="card" data-aos="fade-up">
               <div className="card_left">
-                <h3>{translations["card.brand"]}</h3>
+                <h3>{translations["card.smart"]}</h3>
 
                 <div className="card_tabs">
-                  <a className="card_tab" href="#!">{translations["card.tab.logo"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.illustrations"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.presentation"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.strategy"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.marketing"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.design"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.automation"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.security"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.energy"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.light"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.voice"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.integration"]}</a>
                 </div>
               </div>
               <div className="card_info">
-                <p className="card_text">{translations["card.brand.desc"]}</p>
+                <p className="card_text">{translations["card.smart.desc"]}</p>
                 <div className="card_btns">
                   <a className="card_btn" href="#contact">{translations["offer.card.btn"]}</a>
                   <a className="card_arrow" href="#!">
@@ -156,16 +157,16 @@ export default function OfferSection() {
                 <h3>{translations["card.app"]}</h3>
 
                 <div className="card_tabs">
-                  <a className="card_tab" href="#!">{translations["card.tab.frontend"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.ui"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.development"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.app"]}</a>
                   <a className="card_tab" href="#!">{translations["card.tab.backend"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.functionality"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.safety"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.testing"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.support"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.performance"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.protection"]}</a>
                 </div>
               </div>
               <div className="card_info">
-                <p className="card_text">{translations["card.brand.desc"]}</p>
+                <p className="card_text">{translations["card.app.desc"]}</p>
                 <div className="card_btns">
                   <a className="card_btn" href="#contact">{translations["offer.card.btn"]}</a>
                   <a className="card_arrow" href="#!">
@@ -179,16 +180,63 @@ export default function OfferSection() {
                 <h3>{translations["card.web"]}</h3>
 
                 <div className="card_tabs">
-                  <a className="card_tab" href="#!">{translations["card.tab.integrations"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.backend"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.websites"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.ui"]}</a>
                   <a className="card_tab" href="#!">{translations["card.tab.frontend"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.optimization"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.testing"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.CMS"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.ecomerce"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.seo"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.performance"]}</a>
                 </div>
               </div>
               <div className="card_info">
-                <p className="card_text">{translations["card.brand.desc"]}</p>
+                <p className="card_text">{translations["card.web.desc"]}</p>
+                <div className="card_btns">
+                  <a className="card_btn" href="#contact">{translations["offer.card.btn"]}</a>
+                  <a className="card_arrow" href="#!">
+                    <img src={clarityArrowUp} />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="card" data-aos="fade-up">
+              <div className="card_left">
+                <h3>{translations["card.erp"]}</h3>
+
+                <div className="card_tabs">
+                  <a className="card_tab" href="#!">{translations["card.tab.finance"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.supply"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.human"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.crm"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.performance"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.business"]}</a>
+                </div>
+              </div>
+              <div className="card_info">
+                <p className="card_text">{translations["card.erp.desc"]}</p>
+                <div className="card_btns">
+                  <a className="card_btn" href="#contact">{translations["offer.card.btn"]}</a>
+                  <a className="card_arrow" href="#!">
+                    <img src={clarityArrowUp} />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="card" data-aos="fade-up">
+              <div className="card_left">
+                <h3>{translations["card.internet"]}</h3>
+
+                <div className="card_tabs">
+                  <a className="card_tab" href="#!">{translations["card.tab.devices"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.remote"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.control"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.analytics"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.connectiv"]}</a>
+                  <a className="card_tab" href="#!">{translations["card.tab.industry"]}</a>
+                </div>
+              </div>
+              <div className="card_info">
+                <p className="card_text">{translations["card.internet.desc"]}</p>
                 <div className="card_btns">
                   <a className="card_btn" href="#contact">{translations["offer.card.btn"]}</a>
                   <a className="card_arrow" href="#!">
