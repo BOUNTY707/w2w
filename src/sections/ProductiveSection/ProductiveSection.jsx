@@ -38,8 +38,7 @@ export default function ProductiveSection() {
             </a>
           </div>
 
-          <div className="slider slider-none">
-            {/* 1-Swiper */}
+          {/* <div className="slider slider-none">
             <Swiper
               className="productiveSlide"
               direction="vertical"
@@ -69,7 +68,6 @@ export default function ProductiveSection() {
               )}
             </Swiper>
 
-            {/* 2-Swiper */}
             <Swiper
               className="productiveSlide2"
               slidesPerView={2.8}
@@ -97,7 +95,7 @@ export default function ProductiveSection() {
                 )
               )}
             </Swiper>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
