@@ -403,7 +403,7 @@ header .header_mob.active {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-  max-width: 591px;
+  max-width: 514px;
 }
 
 .home_block .partners p {
@@ -411,14 +411,14 @@ header .header_mob.active {
   font-weight: 600;
   font-size: 14px;
   line-height: 22.4px;
-  max-width: 150px;
+  max-width: 175px;
   color: #010205;
 }
 
 .home_block .partners_logo {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 27px;
 }
 
 .home_block .traffic {
@@ -602,6 +602,9 @@ header .header_mob.active {
   color: var(--black);
   max-width: 744px;
 }
+.about_block .top p span{
+  color: var(--green);
+}
 
 .about_cards .card {
   display: flex;
@@ -641,7 +644,7 @@ header .header_mob.active {
 .about_cards .team {
   display: flex;
   align-items: center;
-  gap: 3px;
+  gap: 7px;
 }
 
 .about_cards .team {
@@ -652,7 +655,6 @@ header .header_mob.active {
   width: 70px;
   height: 70px;
   border-radius: 100%;
-  border: 2px solid #FFFFFF80;
 }
 
 .about_block .about_video {
@@ -745,6 +747,12 @@ header .header_mob.active {
 .portfolio .portfolioSlide{
   padding-bottom: 40px;
 }
+.portfolio .portfolioSlide .swiper-slide{
+  opacity: 0 !important;
+}
+.portfolio .portfolioSlide .swiper-slide-active{
+  opacity: 1 !important;
+}
 
 .portfolio .swiper-pagination {
   background: var(--black-light);
@@ -814,7 +822,7 @@ header .header_mob.active {
   padding: 100px 0px 110px;
   display: flex;
   flex-direction: column;
-  max-width: 626px;
+  max-width: 823px;
 }
 
 .productive .title {
@@ -1027,7 +1035,7 @@ header .header_mob.active {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  max-width: 560px;
+  max-width: 500px;
   margin-top: auto;
 }
 .offer .card .card_tab{
@@ -1047,7 +1055,7 @@ header .header_mob.active {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  max-width: 496px;
+  max-width: 513px;
   margin-left: auto;
 }
 .offer .card .card_text {
@@ -2312,6 +2320,13 @@ footer .footer_contact {
     padding: 20px 25px 40px 25px;
   }
 
+  .offer{
+    padding-bottom: 60px;
+  }
+  .offer .offer_title {
+    font-size: 36px;
+    line-height: 40px;
+  }
   .offer .card {
     gap: 30px;
     padding: 30px;
@@ -2322,27 +2337,30 @@ footer .footer_contact {
   }
   .offer .card .card_tab {
     padding: 8px 10px;
-    font-size: 18px;
-    line-height: 22px;
-    border-radius: 10px;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 6px;
   }
   .offer .card .card_text {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 22px;
     font-weight: 400;
   }
   .offer .card .card_arrow{
     display: none;
   }
   .offer .card .card_btn {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
-    border-radius: 15px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
   }
   .offer .card h3 {
-    font-size: 36px;
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 34px;
   }
+  .offer .card,
   .offer .card .card_left {
     gap: 25px;
   }
@@ -2367,11 +2385,23 @@ footer .footer_contact {
     line-height: 24px;
     max-width: 420px;
   }
+  
 }
 
 @media (max-width: 400px) {
-  .services_info .link img,
-  .about_cards .team_imgs a:last-child {
+  .services_info .link img {
     display: none;
+  }
+
+  .about_cards .team_imgs img {
+    width: 50px;
+    height: 50px;
+  }
+  .about_cards .team_btn img{
+    width: 25px;
+  }
+  .about_cards .team_imgs, 
+    .about_cards .team {
+    gap: 3px;
   }
 }

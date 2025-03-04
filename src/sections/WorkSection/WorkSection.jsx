@@ -9,8 +9,10 @@ export default function WorkSection() {
     <div className="work">
       <div className="container">
         <div className="block">
-          <h2 className="work_title" data-aos="fade-right">
-            {translations["work.title"]} <span>{translations["work.title.spn"]}</span>
+          <h2 className="work_title" data-aos="fade-right"
+            dangerouslySetInnerHTML={{
+              __html: translations["work.title"].replaceAll("{","<span>").replaceAll("}","</span>")
+            }}>
           </h2>
           <a href="#contact" className="work_btn" data-aos="fade-left" >
             {translations["work.btn"]} 

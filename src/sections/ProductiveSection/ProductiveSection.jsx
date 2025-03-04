@@ -23,8 +23,10 @@ export default function ProductiveSection() {
       <div className="container">
         <div className="block">
           <div className="info">
-            <h2 className="title" data-aos="fade-up">
-              {translations["productive.title"]} <br /> <span>{translations["productive.title.spn"]}</span>
+            <h2 className="title" data-aos="fade-up" dangerouslySetInnerHTML={{
+              __html: translations["productive.title"].replaceAll("{","<span>").replaceAll("}","</span>")
+            }}>
+              
             </h2>
             <p className="text" data-aos="fade-up">
               {translations["productive.desc"]}

@@ -3,9 +3,9 @@ import { LanguageContext } from "../../translation/context/LanguageContext";
 
 // Images
 import arrowRight from "../../assets/images/arrow-right.svg";
-import companyLogo1 from "../../assets/images/company-logo1.svg";
-import companyLogo2 from "../../assets/images/company-logo2.svg";
-import companyLogo3 from "../../assets/images/company-logo3.svg";
+import LogoVeneniya from "../../assets/images/companyLogo-veneniya.svg";
+import LogoAdm from "../../assets/images/companyLogo-adm.svg";
+import LogoRizo from "../../assets/images/companyLogo-rizoMulk.svg";
 
 export default function HomeSection() {
   const { translations } = useContext(LanguageContext);
@@ -54,8 +54,9 @@ export default function HomeSection() {
         <div className="home_block">
           <div className="info">
             <div className="title_wrap">
-              <h1 className="title" data-aos="fade-up">
-                <span>Win to Win</span> {translations["home.title"]}
+              <h1 className="title" data-aos="fade-up" dangerouslySetInnerHTML={{
+                __html: translations["home.title"].replaceAll("{","<span>").replaceAll("}","</span>")
+                }}>
               </h1>
               <a href="#contact" className="home_btn" data-aos="fade-up">
                 {translations["home.btn"]} <img src={arrowRight} alt="" />
@@ -66,13 +67,13 @@ export default function HomeSection() {
               <p>{translations["partners.desc"]}:</p>
               <div className="partners_logo">
                 <a href="#!">
-                  <img src={companyLogo1} alt="" />
+                  <img src={LogoVeneniya} alt="" />
                 </a>
                 <a href="#!">
-                  <img src={companyLogo2} alt="" />
+                  <img src={LogoAdm} alt="" />
                 </a>
                 <a href="#!">
-                  <img src={companyLogo3} alt="" />
+                  <img src={LogoRizo} alt="" />
                 </a>
               </div>
             </div>
@@ -120,8 +121,9 @@ export default function HomeSection() {
                 <p>
                   <span></span> {translations["traffic.sales"]}
                 </p>
-                <h3>
-                  {translations["traffic.more"]}
+                <h3 dangerouslySetInnerHTML={{
+                  __html: translations["traffic.more"].replaceAll("{","<span>").replaceAll("}","</span>")
+                  }}>
                 </h3>
               </div>
               <div className="analiz_bar">

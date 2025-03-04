@@ -3,7 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
 import { LanguageContext } from "../../translation/context/LanguageContext";
 // images
-import avatar from "../../assets/images/avatar.svg";
+import avatarFazliddin from "../../assets/images/avatar-fazliddin.svg";
+import avatarNuriddin from "../../assets/images/avatar-nuriddin.svg";
+import avatarIbrokhim from "../../assets/images/avatar-ibrokhim.svg";
+import avatarRasul from "../../assets/images/avatar-rasul.svg";
 import plus from "../../assets/images/plus.svg";
 import videoWork from "../../assets/videos/work-video.mp4";
 
@@ -35,11 +38,14 @@ export default function AboutSection() {
       <div className="container">
         <div className="about_block">
           <div className="top">
-            <h2 className="main_title title" data-aos="fade-right">
-              {translations["about.title"]}
+            <h2 className="main_title title" data-aos="fade-right" dangerouslySetInnerHTML={{
+                __html: translations["about.title"].replaceAll("{","<span>").replaceAll("}","</span>")
+                }}>
             </h2>
-            <p data-aos="fade-left">
-              {translations["about.desc"]}
+            <p data-aos="fade-left"
+              dangerouslySetInnerHTML={{
+                __html: translations["about.desc"].replaceAll("{","<span>").replaceAll("}","</span>")
+              }}>
             </p>
           </div>
 
@@ -53,16 +59,16 @@ export default function AboutSection() {
               <div className="team">
                 <div className="team_imgs">
                   <a href="#!">
-                    <img src={avatar} alt="" />
+                    <img src={avatarFazliddin} alt="" />
                   </a>
                   <a href="#!">
-                    <img src={avatar} alt="" />
+                    <img src={avatarNuriddin} alt="" />
                   </a>
                   <a href="#!">
-                    <img src={avatar} alt="" />
+                    <img src={avatarIbrokhim} alt="" />
                   </a>
                   <a href="#!">
-                    <img src={avatar} alt="" />
+                    <img src={avatarRasul} alt="" />
                   </a>
                 </div>
                 <button className="team_btn">

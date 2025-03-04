@@ -29,11 +29,14 @@ export default function PortfolioSection() {
     <div className="portfolio" id="portfolio">
       <div className="container">
         <div className="info">
-          <h2 className="main_title title" data-aos="fade-down">
-            <span>{translations["portfolio.title.spn"]}</span>
-            {translations["portfolio.title"]}
+          <h2 className="main_title title" data-aos="fade-down" dangerouslySetInnerHTML={{
+             __html: translations["portfolio.title"].replaceAll("{","<span>").replaceAll("}","</span>")
+            }}>
           </h2>
-          <p className="portfolio_text">{translations["portfolio.desc"]} <span>{translations["portfolio.desc.year"]}</span></p>
+          <p className="portfolio_text" dangerouslySetInnerHTML={{
+              __html: translations["portfolio.desc"].replaceAll("{","<span>").replaceAll("}","</span>")
+            }}>
+          </p>
         </div>
         <div className="slider" data-aos="fade-up">
             <Swiper

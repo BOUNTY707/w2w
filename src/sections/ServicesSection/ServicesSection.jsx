@@ -12,13 +12,17 @@ export default function ServicesSection() {
     <div className="services" id="services">
       <div className="container">
         <div className="block">
-          <h2 className="main_title title" data-aos="zoom-out" >
-            <span>{translations["serv.title.spn"]}</span>{translations["serv.title"]}
+          <h2 className="main_title title" data-aos="zoom-out" dangerouslySetInnerHTML={{
+                __html: translations["serv.title"].replaceAll("{","<span>").replaceAll("}","</span>")
+                }}>
           </h2>
 
           <div className="services_info" data-aos="zoom-out">
-            <div className="info">
-              <h2>{translations["serv.info.title"]} <span>{translations["serv.info.title.spn"]}</span> </h2>
+            <div className="info">  
+              <h2 dangerouslySetInnerHTML={{
+                __html: translations["serv.info.title"].replaceAll("{","<span>").replaceAll("}","</span>")
+                }}>
+              </h2>
               <div className="link">
                 <a className="services_btn" href="#contact">Let’s start your project</a>
                 <img src={arrowLeft} alt="" />

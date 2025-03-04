@@ -23,11 +23,10 @@ export default function TestimonialsSection() {
     <div className="testimonials" id="testimonials">
       <div className="container">
         <div className="block">
-          <h2
-            className="main_title title"
-            data-aos="fade-down"
-          >
-            <span>{translations["testim.title.spn"]}</span>{translations["testim.title"]}
+          <h2 className="main_title title" data-aos="fade-down"
+            dangerouslySetInnerHTML={{
+            __html: translations["testim.title"].replaceAll("{","<span>").replaceAll("}","</span>")
+            }}>
           </h2>
           <div className="slider" data-aos="fade-up">
             <Swiper

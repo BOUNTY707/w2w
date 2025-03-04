@@ -5,36 +5,30 @@
     "nav.link.contact": "Contact",
     "nav.link.testimonials": "Testimonials",
 
-    "home.title": "solutions with digital transformation",
+    "home.title": "{Win to Win} solutions with digital transformation",
     "home.btn": "Start your project",
-    "partners.desc": "Trusted by the world's biggest brands",
+    "partners.desc": "Trusted by national biggest brands.",
    
     "traffic.title": "Major projects",
     "traffic.sales": "Drive More Traffic and Sales",
-    "traffic.more": "Drive more traffic and product sales",
+    "traffic.more": "Turning {your business} digital",
 
-    "about.title": "About us",
-    "about.desc": "At WIN TO WIN, our goal is to drive technological growth and innovation across Central Asia. As a leading IT outsourcing company, we are committed to delivering cutting-edge solutions that empower businesses and transform industries",
+    "about.title": "About {us}",
+    "about.desc": "At {WIN TO WIN}, our goal is to drive technological growth and innovation across Central Asia. As a leading IT outsourcing company, we are committed to delivering cutting-edge solutions that empower businesses and transform industries",
     "about.teammates": "Teammates",
 
-    "portfolio.title.spn": "Proje",
-    "portfolio.title": "cts",
-    "portfolio.desc": "The average spending on our projects is $250,000 up until the",
-    "portfolio.desc.year": "year 2025.",
+    "portfolio.title": "{Proje}cts",
+    "portfolio.desc": "The average spending on our projects is {$250,000} up until the {year 2025.}",
 
-    "productive.title": "We provide the most",
-    "productive.title.spn": "productive solutions.",
+    "productive.title": "We provide {excellent opportunities}, engaging challenges, and {valuable experience}.",
+    "productive.title.join": "{Join us} for {growth}, dynamic challenges, and hands-on experience that {truly matters}.",
     "productive.desc": "Lorem Ipsum is simply dummy text of th printing and typesetting industry. Lorem Ipsum",
     "productive.btn": "Let’s start your project",
 
-    "serv.title.spn": "Servic",
-    "serv.title": "es",
-    "serv.info.title": "Are you losing customers due to outdated solutions? We will",
-    "serv.info.title.spn": "automate, protect data, and increase profits.",
+    "serv.title": "{Servic}es",
+    "serv.info.title": "Are you {losing customers} due to outdated solutions? We will {automate, protect data}, and {increase profits.}",
     
-    
-    "offer.title.spn": "What we",
-    "offer.title": "offer?",
+    "offer.title": "{What we} offer?",
     "offer.card.btn": "Start your project",
 
     
@@ -49,15 +43,16 @@
     "card.erp": "ERP",
     "card.internet": "Internet of things",
 
-    "card.brand.desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum",
-    "card.ai.desc": "AI transforms data into intelligence, automates tasks, and enhances decision-making, driving innovation across industries with machine learning, natural language processing, and predictive analytics.",
-    "card.hardwer.desc": "Equip your business with top-quality hardware! Get reliable servers, networking, and IT solutions to enhance performance, ensure security, and scale efficiently—all with the latest technology",
-    "card.system.desc": "Streamline your business with a powerful CRM! Manage customers, track sales, and automate workflows to boost productivity, improve relationships, and drive growth—all in one smart platform.",
-    "card.smart.desc": "Upgrade to a smart home! Control lighting, security, and appliances effortlessly with smart technology. Enhance comfort, security, and energy efficiency—all from your phone or voice commands",
-    "card.app.desc": "Boost your business with a high-performance mobile app! Engage customers, increase sales, and streamline operations with a custom-built, user-friendly app tailored to your needs.",
-    "card.web.desc": "Elevate your online presence with expert web development! Build fast, secure, and user-friendly websites to engage customers, boost sales, and grow your business—all with cutting-edge technology.",
-    "card.erp.desc": "Optimize your business with a powerful ERP system! Streamline operations, automate workflows, and integrate finance, inventory, and HR to boost efficiency and drive growth—all in one smart platform.",
-    "card.internet.desc": "Transform your world with smart IoT solutions! Connect devices, automate processes, and gather real-time insights to boost efficiency, enhance security, and drive innovation—all in one intelligent ecosystem.",
+    "card.brand.desc": "Build a strong and memorable brand! We create strategy, logos, and identity that make you stand out and earn customer trust.",
+    "card.ux.desc": "Make your product intuitive and visually stunning! We design seamless user experiences and engaging interfaces to boost conversions and user satisfaction.",
+    "card.ai.desc": "AI converts data into intelligence, automates tasks, and improves decisions, driving innovation with machine learning, NLP, and analytics.",
+    "card.hardwer.desc": "Power your business with top-quality hardware! Get reliable servers, networking, and IT solutions for performance, security, and scalability—all with the latest tech.",
+    "card.system.desc": "Optimize your business with a powerful CRM! Manage customers, track sales, and automate workflows to boost productivity and growth—all in one smart platform.",
+    "card.smart.desc": "Upgrade to a smart home! Control lights, security, and appliances effortlessly for comfort, safety, and energy savings—all from your phone or voice.",
+    "card.app.desc": "Boost your business with a custom mobile app! Engage customers, increase sales, and streamline operations with a user-friendly, high-performance solution.",
+    "card.web.desc": "Elevate your brand with expert web development! Get a fast, secure, and user-friendly website to engage customers and drive growth with cutting-edge tech.",
+    "card.erp.desc": "Optimize your business with a powerful ERP! Streamline operations, automate workflows, and integrate finance, inventory, and HR for efficiency and growth—all in one platform.",
+    "card.internet.desc": "Transform your world with smart IoT! Connect devices, automate processes, and gain real-time insights for efficiency, security, and innovation—all in one ecosystem.",
     
     
     "card.tab.logo": "Logo",
@@ -74,10 +69,10 @@
     "card.tab.visual": "Visual Design",
     "card.tab.wireframing": "Wireframing",
 
-    "card.tab.chatbots": "chatbots",
+    "card.tab.chatbots": "Chatbots",
     "card.tab.translation": "AI translation",
-    "card.tab.face": "face recognition",
-    "card.tab.manager": "sales manager",
+    "card.tab.face": "Face recognition",
+    "card.tab.manager": "Sales manager",
     "card.tab.integrations": "Integrations",
 
     "card.tab.enterprise": "Enterprise-Grade Servers",
@@ -99,7 +94,7 @@
     "card.tab.energy": "Energy Efficiency",
     "card.tab.light": "Smart Lighting",
     "card.tab.voice": "Voice Control",
-    "card.tab.integration": "AI Integration",
+    "card.tab.ai": "IoT Integration",
     
     "card.tab.ui": "UI/UX Design",
     "card.tab.development": "Cross-Platform Development",
@@ -128,20 +123,17 @@
     "card.tab.industry": "Industry-Specific Solutions",
 
 
-    "price.title": "There could be a price list here, but",
-    "price.title.spn": "there won't be one",
+    "price.title": "There could be a price list here, but {there won't be one}",
     "price.desc": "Each task is special. That's why we first ask about the project to understand its scale and goals, and then we quote the cost.",
     "price.btn": "Let’s start your project",
 
-    "testim.title.spn": "Testimo",
-    "testim.title": "nials",
+    "testim.title": "{Testimo}nials",
     "testim.card_country": "Uzbekistan",
     "testim.card_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum ",
     "testim.card_name": "Azik Aziko",
     "testim.card_work": "UX/UI deesigner at IT  agency",
 
-    "work.title": "Let’s",
-    "work.title.spn": "start working!",
+    "work.title": "Let’s {start working!}",
     "work.btn": "Get Started",
 
     "contact.title": "Contact to us",
