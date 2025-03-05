@@ -20,9 +20,8 @@
     "portfolio.title": "{Proje}cts",
     "portfolio.desc": "The average spending on our projects is {$250,000} up until the {year 2025.}",
 
-    "productive.title": "We provide {excellent opportunities}, engaging challenges, and {valuable experience}.",
-    "productive.title.join": "{Join us} for {growth}, dynamic challenges, and hands-on experience that {truly matters}.",
-    "productive.desc": "Lorem Ipsum is simply dummy text of th printing and typesetting industry. Lorem Ipsum",
+    "productive.title": "Turning Your {Business} Digital",
+    "productive.desc": "We provide excellent opportunities, engaging challenges, and valuable experience.",
     "productive.btn": "Let’s start your project",
 
     "serv.title": "{Servic}es",

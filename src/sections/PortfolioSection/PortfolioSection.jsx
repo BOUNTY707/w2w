@@ -14,7 +14,7 @@ import portfolioTopskill from "../../assets/images/portfolio-topskill.png";
 import portfolioDors from "../../assets/images/portfolio-dors.png";
 import portfolioAdm from "../../assets/images/portfolio-adm.png";
 import portfolioNohunt from "../../assets/images/portfolio-nohunt.png";
-import portfolioVeneniya from "../../assets/images/portfolio-veneniya.png";
+import portfolioUybaza from "../../assets/images/portfolio-uybaza.png";
 import portfolioKvarenda from "../../assets/images/portfolio-kvarenda.png";
 import arrowRight from "../../assets/images/slide-arrow-right.svg";
 import arrowLeft from "../../assets/images/slide-arrow-left.svg";
@@ -100,7 +100,7 @@ export default function PortfolioSection() {
               <SwiperSlide>
                 <div className="slide_card">
                   <a href="#!" className="slide_img">
-                    <img src={portfolioVeneniya} alt="" />
+                    <img src={portfolioUybaza} alt="" />
                   </a>
                 </div>
               </SwiperSlide>
