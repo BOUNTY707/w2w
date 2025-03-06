@@ -7,6 +7,8 @@ import avatarFazliddin from "../../assets/images/avatar-fazliddin.svg";
 import avatarNuriddin from "../../assets/images/avatar-nuriddin.svg";
 import avatarIbrokhim from "../../assets/images/avatar-ibrokhim.svg";
 import avatarRasul from "../../assets/images/avatar-rasul.svg";
+import avatarRamziddin from "../../assets/images/avatarRamziddin.png";
+import avatarAlisher from "../../assets/images/avatar-alisher.png";
 import plus from "../../assets/images/plus.svg";
 import videoWork from "../../assets/videos/work-video.mp4";
 
@@ -16,7 +18,6 @@ export default function AboutSection() {
   // Vide play
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
-
   const handlePlayPause = () => {
     if (videoRef.current) {
       if (videoRef.current.paused) {
@@ -28,10 +29,16 @@ export default function AboutSection() {
       }
     }
   };
-
   const handleVideoEnd = () => {
-    setIsPlaying(false); // Video tugaganda play icon qayta chiqadi
+    setIsPlaying(false); 
   };
+
+  // Avatar add and remove
+  const [isExpanded, setIsExpanded] = useState(false);
+  const toggleTeamVisibility = () => {
+    setIsExpanded(!isExpanded);
+  };
+  
 
   return (
     <div className="about" id="about">
@@ -58,22 +65,18 @@ export default function AboutSection() {
 
               <div className="team">
                 <div className="team_imgs">
-                  <a href="#!">
-                    <img src={avatarFazliddin} alt="" />
-                  </a>
-                  <a href="#!">
-                    <img src={avatarNuriddin} alt="" />
-                  </a>
-                  <a href="#!">
-                    <img src={avatarIbrokhim} alt="" />
-                  </a>
-                  <a href="#!">
-                    <img src={avatarRasul} alt="" />
-                  </a>
+                  {[avatarFazliddin, avatarNuriddin, avatarIbrokhim, avatarRamziddin, avatarAlisher]
+                    .slice(0, isExpanded ? undefined : 4)
+                    .map((avatar, index) => (
+                      <a href="#!" key={index}>
+                        <img src={avatar} alt="" />
+                      </a>
+                    ))}
+                  <button className={`team_btn ${isExpanded ? "active" : ""}`} onClick={toggleTeamVisibility}>
+                    <span className="plus">+</span>
+                    <span className="minus">−</span>
+                  </button>
                 </div>
-                <button className="team_btn">
-                  <img src={plus} alt="" />
-                </button>
               </div>
             </div>
 

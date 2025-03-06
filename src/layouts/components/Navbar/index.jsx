@@ -17,6 +17,18 @@ export default function Navbar() {
     setHeadIsActive(!headIsActive);
   };
 
+  // Body ga "no-scroll" class qo‘shish va olib tashlash
+  useEffect(() => {
+    if (headIsActive) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [headIsActive]);
+
   // Dark mode
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem("theme") === "dark"
@@ -30,18 +42,6 @@ export default function Navbar() {
       localStorage.setItem("theme", "light");
     }
   }, [darkMode]);
-
-  // Body ga "no-scroll" class qo‘shish va olib tashlash
-  useEffect(() => {
-    if (headIsActive) {
-      document.body.classList.add("no-scroll");
-    } else {
-      document.body.classList.remove("no-scroll");
-    }
-    return () => {
-      document.body.classList.remove("no-scroll");
-    };
-  }, [headIsActive]);
 
   // Language state
   const [langIsActive, setLangIsActive] = useState(false);
@@ -91,11 +91,11 @@ export default function Navbar() {
             </a>
 
             <div className="language_wrap">
-              <button className="language" onClick={toggleLanguage}>
+              <button className="language">
                 {language === "en" ? "EN" : "RU"}
               </button>
 
-              <div className={`tabs ${langIsActive ? "active" : ""}`}>
+              <div className="tabs">
                 <button
                   className={`tab ${language === "en" ? "active" : ""}`}
                   onClick={() => changeLanguage("en")}
