@@ -67,9 +67,9 @@ export default function AboutSection() {
                   <a href="#!">
                     <img src={avatarIbrokhim} alt="" />
                   </a>
-                  <a href="#!">
+                 {/* <a href="#!">
                     <img src={avatarRasul} alt="" />
-                  </a>
+                  </a> */}
                 </div>
                 <button className="team_btn">
                   <img src={plus} alt="" />
