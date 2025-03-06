@@ -6,10 +6,8 @@ import { LanguageContext } from "../../translation/context/LanguageContext";
 import avatarFazliddin from "../../assets/images/avatar-fazliddin.svg";
 import avatarNuriddin from "../../assets/images/avatar-nuriddin.svg";
 import avatarIbrokhim from "../../assets/images/avatar-ibrokhim.svg";
-import avatarRasul from "../../assets/images/avatar-rasul.svg";
 import avatarRamziddin from "../../assets/images/avatarRamziddin.png";
 import avatarAlisher from "../../assets/images/avatar-alisher.png";
-import plus from "../../assets/images/plus.svg";
 import videoWork from "../../assets/videos/work-video.mp4";
 
 export default function AboutSection() {
