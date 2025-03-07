@@ -33,7 +33,7 @@ export default function MainLayout({ children }) {
       <OfferSection />
       <ProductiveSection />
       <PriceListSections />
-    {/*<TestimonialsSection />*/}
+      {/*<TestimonialsSection />*/}
       <WorkSection />
       <ContactSection />
 

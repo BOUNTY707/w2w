@@ -1,9 +1,6 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "../../translation/context/LanguageContext";
 
-// Images
-import clarityArrowUp from "../../assets/images/clarity_arrow-top.svg";
-
 export default function PriceListSections() {
   const { translations } = useContext(LanguageContext);
 

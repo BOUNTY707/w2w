@@ -46,10 +46,6 @@ export default function Navbar() {
   // Language state
   const [langIsActive, setLangIsActive] = useState(false);
 
-  const toggleLanguage = () => {
-    setLangIsActive(!langIsActive);
-  };
-
   const changeLanguage = (lang) => {
     setLanguage(lang);
     setLangIsActive(false);
