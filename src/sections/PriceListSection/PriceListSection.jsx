@@ -17,7 +17,7 @@ export default function PriceListSections() {
                 }}>
             </h3>
             <p className="price_text">{translations["price.desc"]}</p>
-            <a href="#!" className="price_btn">{translations["price.btn"]}</a>
+            <a href="#contact" className="price_btn">{translations["price.btn"]}</a>
           </div>
         </div>
       </div>
