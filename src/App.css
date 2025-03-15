@@ -1053,6 +1053,8 @@ header .header_mob.active {
   border: 1px solid var(--green);
   background: var(--grey);
   padding: 40px 50px;
+  min-height: -webkit-fill-available;
+  overflow: visible;
 }
 .offer .card .card_left{
   display: flex;
