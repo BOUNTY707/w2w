@@ -3,6 +3,7 @@ import { LanguageContext } from "../../translation/context/LanguageContext";
 
 // Images
 import clarityArrowUp from "../../assets/images/clarity_arrow-top.svg";
+import "./index.style.scss"
 
 export default function OfferSection() {
   const { translations } = useContext(LanguageContext);

@@ -8,7 +8,7 @@ import AboutSection from "../../sections/AboutSection/AboutSection";
 import PortfolioSection from "../../sections/PortfolioSection/PortfolioSection";
 import ProductiveSection from "../../sections/ProductiveSection/ProductiveSection";
 import ServicesSection from "../../sections/ServicesSection/ServicesSection";
-import OfferSection from "../../sections/OfferSection/OfferSection";
+import OfferSection from "../../sections/OfferSection";
 import TestimonialsSection from "../../sections/TestimonialsSection/TestimonialsSection";
 import WorkSection from "../../sections/WorkSection/WorkSection";
 import PriceListSections from "../../sections/PriceListSection/PriceListSection";
@@ -24,18 +24,6 @@ export default function MainLayout({ children }) {
     <div>
       <Navbar />
       {children}
-
-      <HomeSection />
-      <AboutSection />
-      <PortfolioSection />
-      <ProductiveSection />
-      <ServicesSection />
-      <OfferSection />
-      <ProductiveSection />
-      <PriceListSections />
-      {/*<TestimonialsSection />*/}
-      <WorkSection />
-      <ContactSection />
 
       <Footer />
     </div>

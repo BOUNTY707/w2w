@@ -10,6 +10,9 @@ import gmail from "../../../assets/images/gmail.svg";
 import phone from "../../../assets/images/phone.svg";
 import copyright from "../../../assets/images/copyright.svg";
 
+import "./index.style.scss"
+
+
 export default function Footer() {
   const { translations } = useContext(LanguageContext);
   return (
