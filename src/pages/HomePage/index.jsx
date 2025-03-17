@@ -18,7 +18,6 @@ export default function HomePage() {
       <AboutSection />
       <PortfolioSection />
       <ProductiveSection />
-      {/* <ServicesSection /> */}
       <OfferSection />
       <ProductiveSection />
       <PriceListSections />
