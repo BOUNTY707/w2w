@@ -47,8 +47,8 @@ export default function OfferSection() {
           </h2>
 
           <div ref={offerWrapRef} className="offer_wrap">
-            <div ref={contentRef} className={`content ${stickyClass}`}>
-              <div className="info" data-aos="fade-up">
+            <div ref={contentRef} className={`content ${stickyClass}`} data-aos="fade-up">
+              <div className="info">
                 <h3 className="info_title"
                   dangerouslySetInnerHTML={{
                     __html: translations["offer.content.title"].replaceAll("{", "<span>").replaceAll("}", "</span>")
@@ -60,7 +60,7 @@ export default function OfferSection() {
                 </p>
                 <a className="info_btn" href="#contact">{translations["offer.content.btn"]}</a>
               </div>
-              <img className="offer_logo" data-aos="fade-up" src={offerLogo} alt="Offer Logo" />
+              <img className="offer_logo" src={offerLogo} alt="Offer Logo" />
             </div>
 
             <div className="cards">

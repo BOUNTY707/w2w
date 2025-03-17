@@ -34,7 +34,7 @@ export default function TestimonialsSection() {
               onSwiper={(swiper) => (swiperRef.current = swiper)}
               modules={[Navigation, Pagination]}
               slidesPerView={2}
-              spaceBetween={82}
+              spaceBetween={30}
               loop={true}
               navigation={{
                 nextEl: ".swiper-button-next",
@@ -42,10 +42,10 @@ export default function TestimonialsSection() {
               }}
               pagination={{ clickable: true }}
               breakpoints={{
-                300: { slidesPerView: 1, spaceBetween: 30 },
-                776: { slidesPerView: 1.5, spaceBetween: 40 },
-                991: { slidesPerView: 1.7, spaceBetween: 60 },
-                1200: { slidesPerView: 2, spaceBetween: 82 },
+                300: { slidesPerView: 1 },
+                776: { slidesPerView: 1.5 },
+                991: { slidesPerView: 1.7 },
+                1200: { slidesPerView: 2 },
               }}
               className="testimonialSlide"
             >
