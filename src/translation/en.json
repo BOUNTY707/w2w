@@ -3,9 +3,9 @@
     "nav.link.about": "About us",
     "nav.link.portfolio": "Portfolio",
     "nav.link.contact": "Contact",
-    "nav.link.testimonials": "Testimonials",
+    "nav.link.reviews": "Reviews",
 
-    "home.title": "{Win to Win} solutions with digital transformation",
+    "home.title": "{Win} to {Win} solutions with digital transformation",
     "home.btn": "Start your project",
     "partners.desc": "Trusted by national biggest brands.",
    
@@ -28,128 +28,86 @@
     "serv.info.title": "Are you {losing customers} due to outdated solutions? We will {automate, protect data}, and {increase profits.}",
     
     "offer.title": "{What we} offer?",
-    "offer.card.btn": "Start your project",
-
+    "offer.content.btn": "Let’s start your project",
+    "offer.content.title": "Are you {losing customers} due to outdated solutions?",
+    "offer.content.text": "Our solutions will help you",
     
-    "card.brand": "Branding",
-    "card.ux": "UX/UI design",
-    "card.ai": "AI (Artificial Intellegence)",
-    "card.hardware": "Hardware Supply",
-    "card.system": "CRM System",
-    "card.smart": "Smart house",
-    "card.app": "Mobile App",
-    "card.web": "Web Development",
-    "card.erp": "ERP",
-    "card.internet": "Internet of things",
+    "cards": [
+        { 
+            "id": 1, 
+            "title": "01. AI (Artificial intelligence)",
+            "tabs": [" Face recognition", "Sales manager", "Chatbots", "Integrations", "AI translation"]
+        },
+        { 
+            "id": 2, 
+            "title": "02. ERP",
+            "tabs": ["Inventory & Supply Chain", "Human Resources", "Workflow Automation", "Finance Management", "Sales & CRM Integration"]
+        },
+        { 
+            "id": 3, 
+            "title": "03. CRM System",
+            "tabs": ["Sales Tracking", "Workflow Automation", "Data Analytics", "Reporting & Insights", "Marketing Integration"]
+        },
+        { 
+            "id": 4, 
+            "title": "04. Mobile App",
+            "tabs": ["Security & Data Protection", " Performance Optimization", "Native Apps", " Backend Integration", "UI/UX Design"]
+        },
+        { 
+            "id": 5, 
+            "title": "05. Web Development",
+            "tabs": ["Frontend & Backend Development", "SEO Optimization", "UI/UX Design", "E-commerce Solutions", "Custom Websites"]
+        },
+        { 
+            "id": 6, 
+            "title": "06. UX/UI design",
+            "tabs": ["Usability Personas", "User Research", "Usability Testing", "Wireframing", "Prototyping", "Visual Design"]
+        },
+        { 
+            "id": 7, 
+            "title": "07. Branding",
+            "tabs": ["Logo", "Presentation", "Strategy", "Illustrations", "Packaging and Design"]
+        },
+        { 
+            "id": 8, 
+            "title": "08. Smart house",
+            "tabs": ["Smart Lighting", "Energy Efficiency", "Voice Control", "IoT Integration", "Security Systems"]
+        },
+        { 
+            "id": 9, 
+            "title": "09. Internet of things",
+            "tabs": ["Industry-Specific Solutions", "Automation & Control", "Data Analytics & Insights", "Smart Devices Integration", "Remote Monitoring"]
+        },
+        { 
+            "id": 10, 
+            "title": "10. Hardware Supply",
+            "tabs": ["Enterprise-Grade Servers", "Storage Solutions", "Security Systems", "Networking Equipment", "IT Infrastructure Setup"]
+        }
+    ],
 
-    "card.brand.desc": "Build a strong and memorable brand! We create strategy, logos, and identity that make you stand out and earn customer trust.",
-    "card.ux.desc": "Make your product intuitive and visually stunning! We design seamless user experiences and engaging interfaces to boost conversions and user satisfaction.",
-    "card.ai.desc": "AI converts data into intelligence, automates tasks, and improves decisions, driving innovation with machine learning, NLP, and analytics.",
-    "card.hardwer.desc": "Power your business with top-quality hardware! Get reliable servers, networking, and IT solutions for performance, security, and scalability—all with the latest tech.",
-    "card.system.desc": "Optimize your business with a powerful CRM! Manage customers, track sales, and automate workflows to boost productivity and growth—all in one smart platform.",
-    "card.smart.desc": "Upgrade to a smart home! Control lights, security, and appliances effortlessly for comfort, safety, and energy savings—all from your phone or voice.",
-    "card.app.desc": "Boost your business with a custom mobile app! Engage customers, increase sales, and streamline operations with a user-friendly, high-performance solution.",
-    "card.web.desc": "Elevate your brand with expert web development! Get a fast, secure, and user-friendly website to engage customers and drive growth with cutting-edge tech.",
-    "card.erp.desc": "Optimize your business with a powerful ERP! Streamline operations, automate workflows, and integrate finance, inventory, and HR for efficiency and growth—all in one platform.",
-    "card.internet.desc": "Transform your world with smart IoT! Connect devices, automate processes, and gain real-time insights for efficiency, security, and innovation—all in one ecosystem.",
-    
-    
-    "card.tab.logo": "Logo",
-    "card.tab.illustrations": "Illustrations",
-    "card.tab.presentation": "Presentation",
-    "card.tab.strategy": "Strategy",
-    "card.tab.marketing": "Marketing",
-    "card.tab.design": "Packaging and Design",
-
-    "card.tab.personas": "Usability Personas",
-    "card.tab.user": "User Research",
-    "card.tab.testing": "Usability Testing",
-    "card.tab.prototyp": "Prototyping",
-    "card.tab.visual": "Visual Design",
-    "card.tab.wireframing": "Wireframing",
-
-    "card.tab.chatbots": "Chatbots",
-    "card.tab.translation": "AI translation",
-    "card.tab.face": "Face recognition",
-    "card.tab.manager": "Sales manager",
-    "card.tab.integrations": "Integrations",
-
-    "card.tab.enterprise": "Enterprise-Grade Servers",
-    "card.tab.network": "Networking Equipment",
-    "card.tab.solution": "Storage Solutions",
-    "card.tab.computer": "Computer Components",
-    "card.tab.security": "Security Systems",
-    "card.tab.it": "IT Infrastructure Setup",
-
-    "card.tab.customer": "Customer Management",
-    "card.tab.sales": "Sales Tracking",
-    "card.tab.workflow": "Workflow Automation",
-    "card.tab.data": "Data Analytics",
-    "card.tab.integration": "Marketing Integration",
-    "card.tab.report": "Reporting & Insights",
-
-
-    "card.tab.automation": "Home Automation",
-    "card.tab.energy": "Energy Efficiency",
-    "card.tab.light": "Smart Lighting",
-    "card.tab.voice": "Voice Control",
-    "card.tab.ai": "IoT Integration",
-    
-    "card.tab.ui": "UI/UX Design",
-    "card.tab.development": "Cross-Platform Development",
-    "card.tab.app": "Native Apps",
-    "card.tab.backend": "Backend Integration",
-    "card.tab.performance": "Performance Optimization",
-    "card.tab.protection": "Security & Data Protection",
-    
-    "card.tab.websites": "Custom Websites",
-    "card.tab.frontend": "Frontend & Backend Development",
-    "card.tab.ecomerce": "E-commerce Solutions",
-    "card.tab.seo": "SEO Optimization",
-    "card.tab.perform": "Performance & Security",
-
-    "card.tab.finance": "Finance Management",
-    "card.tab.supply": "Inventory & Supply Chain",
-    "card.tab.human": "Human Resources",
-    "card.tab.crm": "Sales & CRM Integration",
-    "card.tab.business": "Business Intelligence & Reporting",
-
-    "card.tab.devices": "Smart Devices Integration",
-    "card.tab.remote": "Remote Monitoring",
-    "card.tab.control": "Automation & Control",
-    "card.tab.analytics": "Data Analytics & Insights",
-    "card.tab.connectiv": "Security & Connectivity",
-    "card.tab.industry": "Industry-Specific Solutions",
-
-
-    "price.title": "There could be a price list here, but {there won't be one}",
+    "price.title": "There could be a {price list} here, but {there won't be one}",
     "price.desc": "Each task is special. That's why we first ask about the project to understand its scale and goals, and then we quote the cost.",
     "price.btn": "Let’s start your project",
 
-    "testim.title": "{Testimo}nials",
-    "testim.card_country": "Uzbekistan",
-    "testim.card_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum ",
-    "testim.card_name": "Azik Aziko",
-    "testim.card_work": "UX/UI deesigner at IT  agency",
+    "testim.title": "{Revi}ews",
+    "testim.card_title": "A Trusted Partner for Digital Success!",
+    "testim.card_desc": "Working with Win to Win has been an outstanding experience. The company showcases a high level of professionalism and responsibility, offering innovative solutions in IT and marketing. The W2W team dives deep into clients' needs, providing not just standard services but well-thought-out strategies focused on real results.  Their attention to detail, efficiency, and transparency throughout the process are truly commendable. If you're looking for a reliable partner to elevate your business in the digital space, W2W is definitely worth considering!",
+    "testim.card_name": "Nuriddin Abdumalikov",
+    "testim.card_work": "COO of W2W",
 
     "work.title": "Let’s {start working!}",
-    "work.btn": "Get Started",
+    "work.btn": "Free consultation",
 
-    "contact.title": "Contact to us",
-    "form.name": "Your name",
-    "form.email": "Email",
-    "form.phone": "Phone number",
-    "form.company": "Your company",
-    "form.message": "Message for us",
-    "form.btn": "Send",
+    "contact.title": "Get {Expert} Advice – Request a {Free Consultation} Today!",
+    "form.name": "Name",
+    "form.phone": "Phone",
+    "form.message": "Enter the message...",
+    "form.btn": "Free consultation",
+    "form.privacy": "I accept the terms of the {Privacy Policy} and consent to the processing of {personal data.}",
 
     "footer.desc": "Win to Win solutions with digital transformation",
     "footer.social": "Social media:",
-    "footer.home": "Home",
-    "footer.about": "About us",
-    "footer.portfolio": "Portfolio", 
-    "footer.contact": "Contact",
-    "footer.testimonials": "Testimonials",
     "footer.copyRight": "Copy right W2W"
+    
 
 }

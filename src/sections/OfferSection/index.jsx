@@ -1,243 +1,82 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState, useRef } from "react";
 import { LanguageContext } from "../../translation/context/LanguageContext";
 
 // Images
-import clarityArrowUp from "../../assets/images/clarity_arrow-top.svg";
-import "./index.style.scss"
+import arrowRight from "../../assets/images/arrow-right2.svg";
+import offerLogo from "../../assets/images/offer-logo.png";
+import "./index.style.scss";
 
 export default function OfferSection() {
   const { translations } = useContext(LanguageContext);
+
+  const contentRef = useRef(null);
+  const offerWrapRef = useRef(null);
+  const [stickyClass, setStickyClass] = useState("");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!contentRef.current || !offerWrapRef.current) return;
+
+      const contentTop = contentRef.current.getBoundingClientRect().top; // `.content` yuqori chekkasi
+      const offerWrapTop = offerWrapRef.current.offsetTop;
+      const offerWrapHeight = offerWrapRef.current.offsetHeight;
+      const offerWrapBottom = offerWrapTop + offerWrapHeight;
+      const scrollY = window.scrollY;
+
+      if (scrollY + 100 >= offerWrapTop && scrollY + contentRef.current.offsetHeight + 100 < offerWrapBottom) {
+        setStickyClass("fixed");
+      } else if (scrollY + contentRef.current.offsetHeight + 100 >= offerWrapBottom) {
+        setStickyClass("absolute");
+      } else {
+        setStickyClass("");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div className="offer" id="offer">
       <div className="container">
         <div className="block">
-          <h3 className="offer_title" data-aos="fade-up" dangerouslySetInnerHTML={{
-                __html: translations["offer.title"].replaceAll("{","<span>").replaceAll("}","</span>")
-                }}>
-          </h3>
+          <h2 className="offer_title" data-aos="fade-up"
+            dangerouslySetInnerHTML={{
+              __html: translations["offer.title"].replaceAll("{", "<span>").replaceAll("}", "</span>")
+            }}>
+          </h2>
 
-          <div className="cards">
-            <div className="card" data-aos="fade-up">
-              <div className="card_left">
-                <h3>{translations["card.brand"]}</h3>
-
-                <div className="card_tabs">
-                  <a className="card_tab" href="#!">{translations["card.tab.logo"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.illustrations"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.presentation"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.strategy"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.design"]}</a>
-                </div>
+          <div ref={offerWrapRef} className="offer_wrap">
+            <div ref={contentRef} className={`content ${stickyClass}`}>
+              <div className="info" data-aos="fade-up">
+                <h3 className="info_title"
+                  dangerouslySetInnerHTML={{
+                    __html: translations["offer.content.title"].replaceAll("{", "<span>").replaceAll("}", "</span>")
+                  }}>
+                </h3>
+                <p className="info_text">
+                  <span></span>
+                  {translations["offer.content.text"]}
+                </p>
+                <a className="info_btn" href="#contact">{translations["offer.content.btn"]}</a>
               </div>
-              <div className="card_info">
-                <p className="card_text">{translations["card.brand.desc"]}</p>
-                <div className="card_btns">
-                  <a className="card_btn" href="#contact">{translations["offer.card.btn"]}</a>
-                  <a className="card_arrow" href="#!">
-                    <img src={clarityArrowUp} />
-                  </a>
-                </div>
-              </div>
+              <img className="offer_logo" data-aos="fade-up" src={offerLogo} alt="Offer Logo" />
             </div>
-            <div className="card" data-aos="fade-up">
-              <div className="card_left">
-                <h3>{translations["card.ux"]}</h3>
 
-                <div className="card_tabs">
-                  <a className="card_tab" href="#!">{translations["card.tab.personas"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.user"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.testing"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.prototyp"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.visual"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.wireframing"]}</a>
+            <div className="cards">
+              {translations.cards.map((card) => (
+                <div key={card.id} className="card" data-aos="fade-up">
+                  <h3>{card.title}</h3>
+                  <div className="card_tabs">
+                    {card.tabs.map((tab, index) => (
+                      <a key={index} className="card_tab" href="#!">{tab}</a>
+                    ))}
+                    <a className="card_link" href="#contact">
+                      <img src={arrowRight} alt="Arrow" />
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div className="card_info">
-                <p className="card_text">{translations["card.ux.desc"]}</p>
-                <div className="card_btns">
-                  <a className="card_btn" href="#contact">{translations["offer.card.btn"]}</a>
-                  <a className="card_arrow" href="#!">
-                    <img src={clarityArrowUp} />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="card" data-aos="fade-up">
-              <div className="card_left">
-                <h3>{translations["card.ai"]}</h3>
-
-                <div className="card_tabs">
-                  <a className="card_tab" href="#!">{translations["card.tab.face"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.manager"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.integrations"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.translation"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.chatbots"]}</a>
-                </div>
-              </div>
-              <div className="card_info">
-                <p className="card_text">{translations["card.ai.desc"]}</p>
-                <div className="card_btns">
-                  <a className="card_btn" href="#contact">{translations["offer.card.btn"]}</a>
-                  <a className="card_arrow" href="#!">
-                    <img src={clarityArrowUp} />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="card" data-aos="fade-up">
-              <div className="card_left">
-                <h3>{translations["card.hardware"]}</h3>
-
-                <div className="card_tabs">
-                  <a className="card_tab" href="#!">{translations["card.tab.enterprise"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.solution"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.security"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.network"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.it"]}</a>
-                </div>
-              </div>
-              <div className="card_info">
-                <p className="card_text">{translations["card.hardwer.desc"]}</p>
-                <div className="card_btns">
-                  <a className="card_btn" href="#contact">{translations["offer.card.btn"]}</a>
-                  <a className="card_arrow" href="#!">
-                    <img src={clarityArrowUp} />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="card" data-aos="fade-up">
-              <div className="card_left">
-                <h3>{translations["card.system"]}</h3>
-
-                <div className="card_tabs">
-                  <a className="card_tab" href="#!">{translations["card.tab.sales"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.workflow"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.data"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.report"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.integration"]}</a>
-                </div>
-              </div>
-              <div className="card_info">
-                <p className="card_text">{translations["card.system.desc"]}</p>
-                <div className="card_btns">
-                  <a className="card_btn" href="#contact">{translations["offer.card.btn"]}</a>
-                  <a className="card_arrow" href="#!">
-                    <img src={clarityArrowUp} />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="card" data-aos="fade-up">
-              <div className="card_left">
-                <h3>{translations["card.smart"]}</h3>
-
-                <div className="card_tabs">
-                  <a className="card_tab" href="#!">{translations["card.tab.light"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.energy"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.voice"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.ai"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.security"]}</a>
-                </div>
-              </div>
-              <div className="card_info">
-                <p className="card_text">{translations["card.smart.desc"]}</p>
-                <div className="card_btns">
-                  <a className="card_btn" href="#contact">{translations["offer.card.btn"]}</a>
-                  <a className="card_arrow" href="#!">
-                    <img src={clarityArrowUp} />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="card" data-aos="fade-up">
-              <div className="card_left">
-                <h3>{translations["card.app"]}</h3>
-
-                <div className="card_tabs">
-                  <a className="card_tab" href="#!">{translations["card.tab.protection"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.performance"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.app"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.backend"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.ui"]}</a>
-                </div>
-              </div>
-              <div className="card_info">
-                <p className="card_text">{translations["card.app.desc"]}</p>
-                <div className="card_btns">
-                  <a className="card_btn" href="#contact">{translations["offer.card.btn"]}</a>
-                  <a className="card_arrow" href="#!">
-                    <img src={clarityArrowUp} />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="card" data-aos="fade-up">
-              <div className="card_left">
-                <h3>{translations["card.web"]}</h3>
-
-                <div className="card_tabs">
-                  <a className="card_tab" href="#!">{translations["card.tab.frontend"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.seo"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.ui"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.ecomerce"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.websites"]}</a>
-                </div>
-              </div>
-              <div className="card_info">
-                <p className="card_text">{translations["card.web.desc"]}</p>
-                <div className="card_btns">
-                  <a className="card_btn" href="#contact">{translations["offer.card.btn"]}</a>
-                  <a className="card_arrow" href="#!">
-                    <img src={clarityArrowUp} />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="card" data-aos="fade-up">
-              <div className="card_left">
-                <h3>{translations["card.erp"]}</h3>
-
-                <div className="card_tabs">
-                  <a className="card_tab" href="#!">{translations["card.tab.supply"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.workflow"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.human"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.crm"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.finance"]}</a>
-                </div>
-              </div>
-              <div className="card_info">
-                <p className="card_text">{translations["card.erp.desc"]}</p>
-                <div className="card_btns">
-                  <a className="card_btn" href="#contact">{translations["offer.card.btn"]}</a>
-                  <a className="card_arrow" href="#!">
-                    <img src={clarityArrowUp} />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="card" data-aos="fade-up">
-              <div className="card_left">
-                <h3>{translations["card.internet"]}</h3>
-
-                <div className="card_tabs">
-                  <a className="card_tab" href="#!">{translations["card.tab.industry"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.control"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.analytics"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.devices"]}</a>
-                  <a className="card_tab" href="#!">{translations["card.tab.remote"]}</a>
-                </div>
-              </div>
-              <div className="card_info">
-                <p className="card_text">{translations["card.internet.desc"]}</p>
-                <div className="card_btns">
-                  <a className="card_btn" href="#contact">{translations["offer.card.btn"]}</a>
-                  <a className="card_arrow" href="#!">
-                    <img src={clarityArrowUp} />
-                  </a>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
@@ -245,3 +84,69 @@ export default function OfferSection() {
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+// import React, { useContext } from "react";
+// import { LanguageContext } from "../../translation/context/LanguageContext";
+
+// // Images
+// import clarityArrowUp from "../../assets/images/clarity_arrow-top.svg";
+// import arrowRight from "../../assets/images/arrow-right2.svg";
+// import offerLogo from "../../assets/images/offer-logo.png";
+// import "./index.style.scss"
+
+// export default function OfferSection() {
+//   const { translations } = useContext(LanguageContext);
+
+//   return (
+//     <div className="offer" id="offer">
+//       <div className="container">
+//         <div className="block">
+//           <h2 className="offer_title" data-aos="fade-up" dangerouslySetInnerHTML={{
+//             __html: translations["offer.title"].replaceAll("{","<span>").replaceAll("}","</span>")
+//             }}>
+//           </h2>
+
+//           <div className="offer_wrap">
+//             <div className="content">
+//               <div className="info">
+//                 <h3 className="info_title" data-aos="fade-up" dangerouslySetInnerHTML={{
+//                     __html: translations["offer.content.title"].replaceAll("{","<span>").replaceAll("}","</span>")
+//                     }}>
+//                 </h3>
+//                 <p className="info_text">
+//                   <span></span>
+//                   {translations["offer.content.text"]}
+//                 </p>
+//                 <a className="info_btn" href="#contact">{translations["offer.content.btn"]}</a>
+//               </div>
+//               <img className="offer_logo" src={offerLogo} />
+//             </div>
+//             <div className="cards">
+//               {translations.cards.map((card) => (
+//                 <div key={card.id} className="card" data-aos="fade-up">
+//                   <h3>{card.title}</h3>
+//                   <div className="card_tabs">
+//                     {card.tabs.map((tab, index) => (
+//                       <a key={index} className="card_tab" href="#!">{tab}</a>
+//                     ))}
+//                     <a className="card_link" href="#contact">
+//                       <img src={arrowRight} alt="Arrow" />
+//                     </a>
+//                   </div>
+//                 </div>
+//               ))}
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }

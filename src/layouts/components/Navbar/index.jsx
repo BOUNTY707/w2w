@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { LanguageContext } from "../../../translation/context/LanguageContext";
+import "./index.style.scss";
 
 // Images
 import logo from "../../../assets/images/logo.svg";
@@ -69,9 +70,7 @@ export default function Navbar() {
               <a href="#about">{translations["nav.link.about"]}</a>
               <a href="#portfolio">{translations["nav.link.portfolio"]}</a>
               <a href="#contact">{translations["nav.link.contact"]}</a>
-              <a href="#testimonials">
-                {translations["nav.link.testimonials"]}
-              </a>
+              <a href="#testimonials">{translations["nav.link.reviews"]}</a>
             </div>
           </div>
 
@@ -152,7 +151,7 @@ export default function Navbar() {
             className="mob_link"
             onClick={() => setHeadIsActive(false)}
           >
-            {translations["nav.link.testimonials"]}
+            {translations["nav.link.reviews"]}
           </a>
         </div>
         <a href="tel:+998955353555" className="phone">
