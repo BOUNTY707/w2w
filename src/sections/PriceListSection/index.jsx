@@ -14,8 +14,8 @@ export default function PriceListSections() {
                 __html: translations["price.title"].replaceAll("{","<span>").replaceAll("}","</span>")
                 }}>
             </h3>
-            <p className="price_text">{translations["price.desc"]}</p>
-            <a href="#contact" className="price_btn">{translations["price.btn"]}</a>
+            <p className="price_text" data-aos="fade-up">{translations["price.desc"]}</p>
+            <a href="#contact" className="price_btn" data-aos="fade-up">{translations["price.btn"]}</a>
           </div>
         </div>
       </div>

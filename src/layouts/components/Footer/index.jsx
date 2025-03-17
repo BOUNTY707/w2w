@@ -14,7 +14,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="container">
-        <div className="footer_block">
+        <div className="footer_block" data-aos="fade-up">
           <p>{translations["footer.desc"]}</p>
           <a href="index.html" className="ftr_logo">
             <img src={logo} alt="" />
