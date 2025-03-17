@@ -210,19 +210,10 @@
     .about_block .top p br {
         display: none;
     }
-}
 
-@media (max-width: 776px) {
     .about_video .play_btn {
         transform: translate(50%);
         right: 50%;
-        width: 100px;
-        height: 100px;
-        border: 6px solid var(--grey);
-    }
-
-    .about_video .play_btn svg {
-        width: 25px;
     }
 }
 
@@ -251,6 +242,13 @@
         right: 50%;
         bottom: -39px;
         font-size: 28px;
+        width: 100px;
+        height: 100px;
+        border: 6px solid var(--grey);
+    }
+
+    .about_video .play_btn svg {
+        width: 25px;
     }
 
     .about_cards .team_imgs img {
