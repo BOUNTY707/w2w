@@ -61,7 +61,7 @@ export default function Navbar() {
           data-aos-duration="600"
         >
           <div className="navs">
-            <a href="index.html" className="logo">
+            <a href="/" className="logo">
               <img src={logo} alt="" /> <span>W2W</span>
             </a>
 
@@ -85,7 +85,7 @@ export default function Navbar() {
               +998 95 535 35 55
             </a>
 
-            <div className="language_wrap">
+            {/* <div className="language_wrap">
               <button className="language">
                 {language === "en" ? "EN" : "RU"}
               </button>
@@ -104,7 +104,7 @@ export default function Navbar() {
                   RU
                 </button>
               </div>
-            </div>
+            </div> */}
 
             <button
               className={`bars ${headIsActive ? "active" : ""}`}
