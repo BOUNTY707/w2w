@@ -30,12 +30,12 @@
 
 .portfolio .slider {
     position: relative;
-    width: 884px;
+    width: 1100px;
     margin: 0 auto;
-    background-image: url(../../assets/images/iMac.png);
+    background-image: url(../../assets/images/iMac2.png);
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: 1440px 576px;
+    background-size: 1100px 576px;
 }
 
 .portfolio .slide_img img,
@@ -100,11 +100,11 @@
 }
 
 .portfolio .swiper-button-prev {
-    left: 100px;
+    left: 200px;
 }
 
 .portfolio .swiper-button-next {
-    right: 100px;
+    right: 200px;
 }
 
 
@@ -112,7 +112,7 @@
     position: absolute;
     z-index: 2;
     top: 10px;
-    left: 77px;
+    left: 185px;
     background: #F2F2F2;
     width: 726px;
     padding: 9px 20px 9px 16px;
@@ -166,7 +166,7 @@
     height: 732px;
     position: absolute;
     top: 53px;
-    left: 76px;
+    left: 185px;
     border-radius: 0 0 10px 10px;
     border: none;
     transform: scale(0.5);
@@ -219,6 +219,9 @@
         height: 280px;
         border-radius: 20px;
     }
+    .portfolio .slider {
+        zoom: 0.6;
+    }
 }
 
 @media (max-width: 620px) {
@@ -253,6 +256,12 @@
     }
 }
 
+@media (max-width: 550px) {
+    .portfolio .slider{
+        left: -80px;
+    }
+}
+
 @media (max-width: 460px) {
     .portfolio .slider{
         zoom: .4;
@@ -261,6 +270,6 @@
 
 @media (max-width: 370px) {
     .portfolio .slider{
-        left: -60px;
+        left: -150px;
     }
 }

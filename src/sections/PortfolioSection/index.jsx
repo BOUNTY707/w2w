@@ -12,7 +12,7 @@ import "./index.style.scss";
 import arrowRight from "../../assets/images/arrow-right-white.svg";
 import arrowLeft from "../../assets/images/arrow-left-white.svg";
 import dots from "../../assets/images/dote.svg";
-import siteMenu from "../../assets/images/site-menu.png";
+import siteMenu from "../../assets/images/site-menu.svg";
 import vectorLeft from "../../assets/images/vector-left.svg";
 import vectorRight from "../../assets/images/vector-right.svg";
 import security from "../../assets/images/security.svg";
