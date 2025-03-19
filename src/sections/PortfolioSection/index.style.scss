@@ -29,8 +29,13 @@
 }
 
 .portfolio .slider {
-    max-width: 884px;
+    position: relative;
+    width: 884px;
     margin: 0 auto;
+    background-image: url(../../assets/images/iMac.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 1440px 576px;
 }
 
 .portfolio .slide_img img,
@@ -86,6 +91,7 @@
     bottom: 50px;
     top: auto;
     z-index: 2;
+    width: 80px;
 }
 
 .portfolio .swiper-button-prev::after,
@@ -94,11 +100,77 @@
 }
 
 .portfolio .swiper-button-prev {
-    left: 130px;
+    left: 100px;
 }
 
 .portfolio .swiper-button-next {
-    right: 130px;
+    right: 100px;
+}
+
+
+.portfolio .slider_head{
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 77px;
+    background: #F2F2F2;
+    width: 726px;
+    padding: 9px 20px 9px 16px;
+    border-radius: 3px 3px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.portfolio .slider_head .right,
+.portfolio .slider_head .left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.portfolio .slider_head .slider_arrows{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.portfolio .slider_head .slider_name{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 78px;
+    padding: 8px;
+    background: var(--white);
+    border: 0.25px solid #F2ECEE;
+    border-radius: 5px;
+    width: 291px;
+    height: 26px;
+}
+.portfolio .slider_head .site_name{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.slider_head .site_name span{
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--black-light);
+}
+.portfolio .slide_card{
+    height: 576px;
+}
+.portfolio .slide_card iframe{
+    width: 1457px;
+    height: 732px;
+    position: absolute;
+    top: 53px;
+    left: 76px;
+    border-radius: 0 0 10px 10px;
+    border: none;
+    transform: scale(0.5);
+    transform-origin: top left;
 }
 
 
@@ -135,14 +207,22 @@
     .portfolio .block {
         grid-template-columns: 48% 48%;
     }
+    .portfolio .slider{
+        zoom: .7;
+    }
 }
 
 @media (max-width: 776px) {
-
     .portfolio .portfolio_img img,
     .portfolio .portfolio_img {
         height: 280px;
         border-radius: 20px;
+    }
+}
+
+@media (max-width: 620px) {
+    .portfolio .slider{
+        zoom: .5;
     }
 }
 
@@ -155,7 +235,7 @@
 
     .portfolio .swiper-button-next,
     .portfolio .swiper-button-prev {
-        bottom: 40px;
+        bottom: 70px;
         padding: 8px 30px;
     }
 
@@ -164,17 +244,22 @@
         width: 30px;
     }
 
-    .portfolio .swiper-button-next {
-        right: 0px;
-    }
-
-    .portfolio .swiper-button-prev {
-        left: 0px;
-    }
 
     .portfolio .portfolio_text {
         font-size: 18px;
         line-height: 24px;
         max-width: 420px;
+    }
+}
+
+@media (max-width: 460px) {
+    .portfolio .slider{
+        zoom: .4;
+    }
+}
+
+@media (max-width: 370px) {
+    .portfolio .slider{
+        left: -60px;
     }
 }

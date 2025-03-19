@@ -1,4 +1,5 @@
 import React, { useContext, useRef, useState } from "react";
+import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
 import { LanguageContext } from "../../translation/context/LanguageContext";
@@ -39,10 +40,17 @@ export default function AboutSection() {
 
   // Avatar add and remove
   const [isExpanded, setIsExpanded] = useState(false);
+
   const toggleTeamVisibility = () => {
     setIsExpanded(!isExpanded);
   };
-  
+
+
+  const images = [
+    avatarJavohir, avatarNuriddin, avatarFazliddin, avatarOyimtillo,
+    avatarIbrokhim, avatarZilola, avatarAzamat, avatarMoxira, avatarSulton
+  ]
+
 
   return (
     <div className="about" id="about">
@@ -68,19 +76,16 @@ export default function AboutSection() {
               </div>
 
               <div className="team">
-                <div className="team_imgs">
-                  {[avatarJavohir, avatarNuriddin, avatarFazliddin, avatarOyimtillo, avatarIbrokhim, avatarZilola, avatarAzamat, avatarMoxira, avatarSulton]
-                    .slice(0, isExpanded ? undefined : 4)
-                    .map((avatar, index) => (
-                      <a href="#!" key={index}>
-                        <img src={avatar} alt="" />
-                      </a>
-                    ))}
-                </div>
-                  <button className={`team_btn ${isExpanded ? "active" : ""}`} onClick={toggleTeamVisibility}>
-                    <span className="plus">+</span>
-                    <span className="minus">−</span>
-                  </button>
+                <motion.div className="team_imgs"
+                  animate={{ x: ["0%", "-50%"] }}
+                  transition={{ repeat: Infinity, duration: 40, ease: "linear" }}
+                >
+                  {[...images, ...images, ...images].map((img, index) => (
+                    <a href="#!" key={index}>
+                      <img src={img} alt="productive" />
+                    </a>
+                  ))}
+                </motion.div>
               </div>
             </div>
 

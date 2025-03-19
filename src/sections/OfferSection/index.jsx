@@ -47,7 +47,7 @@ export default function OfferSection() {
           </h2>
 
           <div ref={offerWrapRef} className="offer_wrap">
-            <div ref={contentRef} className={`content ${stickyClass}`} data-aos="fade-up">
+            <div ref={contentRef} className={`content ${stickyClass}`}>
               <div className="info">
                 <h3 className="info_title"
                   dangerouslySetInnerHTML={{

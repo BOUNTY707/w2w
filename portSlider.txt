@@ -1,0 +1,83 @@
+<div className="slider" data-aos="fade-up">
+          <Swiper
+            onSwiper={(swiper) => (swiperRef.current = swiper)}
+            modules={[Navigation, Pagination, EffectFade]}
+            slidesPerView={1}
+            spaceBetween={0}
+            effect="fade"
+            loop={true}
+            navigation={{
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            }}
+            pagination={{ clickable: true }}
+            className="portfolioSlide"
+          >
+            <SwiperSlide>
+              <div className="slide_card">
+                <a href="#!" className="slide_img">
+                  <img src={portfolioSolohiyat} alt="" />
+                  {/* <iframe src="https://w2w.uz" frameborder="0"></iframe> */}
+                </a>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slide_card">
+                <a href="#!" className="slide_img">
+                  <img src={portfolioMit} alt="" />
+                </a>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slide_card">
+                <a href="#!" className="slide_img">
+                  <img src={portfolioTopskill} alt="" />
+                </a>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="slide_card">
+                <a href="#!" className="slide_img">
+                  <img src={portfolioDors} alt="" />
+                </a>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slide_card">
+                <a href="#!" className="slide_img">
+                  <img src={portfolioAdm} alt="" />
+                </a>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slide_card">
+                <a href="#!" className="slide_img">
+                  <img src={portfolioNohunt} alt="" />
+                </a>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="slide_card">
+                <a href="#!" className="slide_img">
+                  <img src={portfolioUybaza} alt="" />
+                </a>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slide_card">
+                <a href="#!" className="slide_img">
+                  <img src={portfolioKvarenda} alt="" />
+                </a>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+          <div className="swiper-pagination"></div>
+          <div className="swiper-button-next">
+            <img src={arrowRight} alt="Next" />
+          </div>
+          <div className="swiper-button-prev">
+            <img src={arrowLeft} alt="Previous" />
+          </div>
+        </div>
