@@ -1,14 +1,17 @@
-import React, { useContext, useEffect, useRef } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import IMask from "imask";
 import { LanguageContext } from "../../translation/context/LanguageContext";
 import "./index.style.scss";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 import arrowRight from "../../assets/images/arrow-right.svg";
 import formLogo from "../../assets/images/offer-logo.png";
+import siteAxios from "./../../utils/siteAxios";
+import { ToastContainer, toast } from "react-toastify";
 
 export default function ContactSection() {
   const { translations } = useContext(LanguageContext);
-
+  const [loading, setLoading] = useState(false);
   const phoneRef = useRef(null);
 
   useEffect(() => {
@@ -19,38 +22,90 @@ export default function ContactSection() {
     }
   }, []);
 
+  async function onSubmit(e) {
+    e.preventDefault();
+    setLoading(true);
+    try {
+      const data = {
+        phone: e.target.phone.value,
+        datas: {
+          name: e.target.name.value,
+          message: e.target.message.value,
+        },
+      };
+
+      const response = await siteAxios.post("/order", data);
+      if (response.status === 200 || response.status === 201) {
+        e.target.reset(); // Clears form fields
+      } else {
+        throw new Error("Failed to submit the form");
+      }
+      e.target.reset();
+      toast("Order sent successfully!");
+    } catch (error) {
+      toast("Error occurred, please try again!");
+    }
+    setLoading(false);
+  }
+
   return (
     <div className="contact" id="contact">
+      <ToastContainer />
       <div className="container">
         <div className="contact_block">
-          <h2 className="title" data-aos="fade-down" dangerouslySetInnerHTML={{
-              __html: translations["contact.title"].replaceAll("{","<span>").replaceAll("}","</span>")
-            }}>
-          </h2>
-          <form action="" data-aos="fade-up">
+          <h2
+            className="title"
+            data-aos="fade-down"
+            dangerouslySetInnerHTML={{
+              __html: translations["contact.title"]
+                .replaceAll("{", "<span>")
+                .replaceAll("}", "</span>"),
+            }}
+          ></h2>
+          <form action="" onSubmit={onSubmit} data-aos="fade-up">
             <div className="form_groups">
               <div className="form_group">
                 <div className="inp_group">
-                  <input type="text" id="name" placeholder={translations["form.name"]} />
+                  <input
+                    required
+                    name="name"
+                    type="text"
+                    id="name"
+                    placeholder={translations["form.name"]}
+                  />
                 </div>
                 <div className="inp_group">
-                  <input type="text" placeholder={translations["form.phone"]} id="phone" ref={phoneRef} />
+                  <input
+                    required
+                    name="phone"
+                    type="text"
+                    placeholder={translations["form.phone"]}
+                    id="phone"
+                    ref={phoneRef}
+                  />
                 </div>
               </div>
               <div className="inp_group">
                 <textarea
+                  required
+                  name="message"
                   id="message"
                   placeholder={translations["form.message"]}
                 ></textarea>
               </div>
               <div className="form_bottom">
                 <button className="form_btn">
-                  {translations["form.btn"]} 
+                  {loading && <AiOutlineLoading3Quarters className="loading" />}
+                  {translations["form.btn"]}
                   <img src={arrowRight} alt="arrowRight" />
                 </button>
-                <p dangerouslySetInnerHTML={{
-                  __html: translations["form.privacy"].replaceAll("{","<span>").replaceAll("}","</span>")
-                }}></p>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: translations["form.privacy"]
+                      .replaceAll("{", "<span>")
+                      .replaceAll("}", "</span>"),
+                  }}
+                ></p>
               </div>
             </div>
 

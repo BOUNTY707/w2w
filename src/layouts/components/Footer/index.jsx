@@ -16,23 +16,23 @@ export default function Footer() {
       <div className="container">
         <div className="footer_block" data-aos="fade-up">
           <p>{translations["footer.desc"]}</p>
-          <a href="index.html" className="ftr_logo">
+          <a href="/" className="ftr_logo">
             <img src={logo} alt="" />
             W2W
           </a>
           <div className="social_links">
             <b>{translations["footer.social"]}</b>
             <div className="social_link">
-              <a href="#!">
+              <a href="https://www.instagram.com/w2w.uz">
                 <img src={instagram} alt="" />
               </a>
-              <a href="#!">
+              {/* <a href="#!">
                 <img src={facebook} alt="" />
               </a>
               <a href="#!">
                 <img src={youtube} alt="" />
-              </a>
-              <a href="#!">
+              </a> */}
+              <a href="https://www.linkedin.com/company/win2wingroup/">
                 <img src={linkedin} alt="" />
               </a>
             </div>
