@@ -23,16 +23,16 @@ export default function Footer() {
           <div className="social_links">
             <b>{translations["footer.social"]}</b>
             <div className="social_link">
-              <a href="https://www.instagram.com/w2w.uz">
+              <a href="https://www.instagram.com/w2w.uz" target="_blank">
                 <img src={instagram} alt="" />
               </a>
-              {/* <a href="#!">
+              <a href="#!" target="_blank">
                 <img src={facebook} alt="" />
               </a>
-              <a href="#!">
+              <a href="#!" target="_blank">
                 <img src={youtube} alt="" />
-              </a> */}
-              <a href="https://www.linkedin.com/company/win2wingroup/">
+              </a>
+              <a href="https://www.linkedin.com/company/win2wingroup/" target="_blank">
                 <img src={linkedin} alt="" />
               </a>
             </div>
