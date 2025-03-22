@@ -21,7 +21,7 @@ export default function HomePage() {
       <OfferSection />
       <ProductiveSection />
       <PriceListSections />
-      {/* <TestimonialsSection /> */}
+      <TestimonialsSection />
       <WorkSection />
       <ContactSection />
     </div>

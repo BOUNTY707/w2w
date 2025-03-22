@@ -90,10 +90,37 @@
     "price.btn": "Let’s start your project",
 
     "testim.title": "{Revi}ews",
-    "testim.card_title": "A Trusted Partner for Digital Success!",
-    "testim.card_desc": "Working with Win to Win has been an outstanding experience. The company showcases a high level of professionalism and responsibility, offering innovative solutions in IT and marketing. The W2W team dives deep into clients' needs, providing not just standard services but well-thought-out strategies focused on real results.  Their attention to detail, efficiency, and transparency throughout the process are truly commendable. If you're looking for a reliable partner to elevate your business in the digital space, W2W is definitely worth considering!",
-    "testim.card_name": "Nuriddin Abdumalikov",
-    "testim.card_work": "COO of W2W",
+
+    "testimCards": [
+        {
+            "id": 1,
+            "name": "Asror Alimov",
+            "link": "@alimov_animals",
+            "title": "Win to Win Made Everything Simpler!",
+            "desc": "Working with Win to Win has been a game-changer for my business. They created a sleek and functional website that serves as a full-fledged catalog, making it effortless for my clients to browse available exotic animals, access detailed information, and check pricing. The team demonstrated exceptional professionalism, understanding my needs perfectly and delivering a solution that exceeded expectations. Their efficiency and attention to detail made the entire process smooth and hassle-free. If you need a top-notch digital presence, Win to Win is the right choice!"
+        },
+        {
+            "id": 2,
+            "name": "Alisher Rustamov",
+            "link": "@alisher.rustam.expert",
+            "title": "A Reliable Partner for Business Growth!",
+            "desc": "After a disappointing experience with previous developers, I was looking for a team that could finally bring my website to completion. Win to Win not only fixed all the unfinished work but also refined and enhanced the entire project, exceeding my expectations. Their speed, professionalism, and deep understanding of business needs truly impressed me. The team worked efficiently, ensuring a seamless and hassle-free process. I highly recommend Win to Win to all businesses and colleagues looking for top-tier digital solutions!"
+        },
+        {
+            "id": 1,
+            "name": "Asror Alimov",
+            "link": "@alimov_animals",
+            "title": "Win to Win Made Everything Simpler!",
+            "desc": "Working with Win to Win has been a game-changer for my business. They created a sleek and functional website that serves as a full-fledged catalog, making it effortless for my clients to browse available exotic animals, access detailed information, and check pricing. The team demonstrated exceptional professionalism, understanding my needs perfectly and delivering a solution that exceeded expectations. Their efficiency and attention to detail made the entire process smooth and hassle-free. If you need a top-notch digital presence, Win to Win is the right choice!"
+        },
+        {
+            "id": 2,
+            "name": "Alisher Rustamov",
+            "link": "@alisher.rustam.expert",
+            "title": "A Reliable Partner for Business Growth!",
+            "desc": "After a disappointing experience with previous developers, I was looking for a team that could finally bring my website to completion. Win to Win not only fixed all the unfinished work but also refined and enhanced the entire project, exceeding my expectations. Their speed, professionalism, and deep understanding of business needs truly impressed me. The team worked efficiently, ensuring a seamless and hassle-free process. I highly recommend Win to Win to all businesses and colleagues looking for top-tier digital solutions!"
+        }
+    ],
 
     "work.title": "Let’s {start working!}",
     "work.btn": "Free consultation",

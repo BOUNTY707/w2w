@@ -20,6 +20,8 @@ export default function TestimonialsSection() {
   
   const swiperRef = useRef(null);
 
+  const images = [reviewsImg, reviewsImg2];
+
   return (
     <div className="testimonials" id="testimonials">
       <div className="container">
@@ -49,35 +51,63 @@ export default function TestimonialsSection() {
               }}
               className="testimonialSlide"
             >
+              {translations.testimCards.map((item, index) => (
+                
+                <SwiperSlide key={index}>
+                  <div className="slide_card">
+                    <a href="#!" className="slide_img">
+                    <img src={images[index % images.length]} alt={item.name} /> 
+                      <div className="overlay">
+                        <img src={logo} alt="Logo" className="logo" />
+                        <div className="card_name">
+                          <b>{item.name}</b>
+                          <span>{item.link}</span> {/* Lavozim uchun `item.link` yoki boshqa maydon kerak */}
+                        </div>
+                      </div>
+                    </a>
+                    <div className="slide_info">
+                      <h4>{item.title}</h4>
+                      <p>{item.desc}</p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+
+            {/* <Swiper
+              onSwiper={(swiper) => (swiperRef.current = swiper)}
+              modules={[Navigation, Pagination]}
+              slidesPerView={2}
+              spaceBetween={30}
+              loop={true}
+              navigation={{
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              }}
+              pagination={{ clickable: true }}
+              breakpoints={{
+                300: { slidesPerView: 1 },
+                776: { slidesPerView: 1.5 },
+                991: { slidesPerView: 1.7 },
+                1200: { slidesPerView: 2 },
+              }}
+              className="testimonialSlide"
+            >
               {[
-                {
-                  name: translations["testim.card_name"],
-                  position: translations["testim.card_work"],
-                  title: translations["testim.card_title"],
-                  text: translations["testim.card_desc"],
-                  img: reviewsImg,
-                },
-                {
-                  name: translations["testim.card_name"],
-                  position: translations["testim.card_work"],
-                  title: translations["testim.card_title"],
-                  text: translations["testim.card_desc"],
-                  img: reviewsImg2,
-                },
-                {
-                  name: translations["testim.card_name"],
-                  position: translations["testim.card_work"],
-                  title: translations["testim.card_title"],
-                  text: translations["testim.card_desc"],
-                  img: reviewsImg,
-                },
-                {
-                  name: translations["testim.card_name"],
-                  position: translations["testim.card_work"],
-                  title: translations["testim.card_title"],
-                  text: translations["testim.card_desc"],
-                  img: reviewsImg2,
-                },
+                {testimCards.map((item, index) => ({
+                  name: item.name,
+                  position: item.link, // Agar bu lavozim bo'lsa, boshqa ma'lumot kerak bo'lishi mumkin
+                  title: item.title,
+                  text: item.desc,
+                  img: `${reviewsImg}`, // Agar har bir element uchun alohida rasm bo‘lsa, uni `item.img` qilib qo‘yishingiz mumkin
+                }))},
+                {testimCards.map((item, index) => ({
+                  name: item.name,
+                  position: item.link, // Agar bu lavozim bo'lsa, boshqa ma'lumot kerak bo'lishi mumkin
+                  title: item.title,
+                  text: item.desc,
+                  img: `${reviewsImg2}`, // Agar har bir element uchun alohida rasm bo‘lsa, uni `item.img` qilib qo‘yishingiz mumkin
+                }))},
               ].map((item, index) => (
                 <SwiperSlide key={index}>
                   <div className="slide_card">
@@ -99,7 +129,7 @@ export default function TestimonialsSection() {
                   </div>
                 </SwiperSlide>
               ))}
-            </Swiper>
+            </Swiper> */}
             <div className="swiper-button-prev">
               <img src={arrowLeft} alt="Previous" />
             </div>
