@@ -135,9 +135,10 @@
     gap: 24px;
 }
 .portfolio .slider_head .slider_name{
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
     gap: 78px;
     padding: 8px;
     background: var(--white);
@@ -157,6 +158,11 @@
     line-height: 100%;
     text-align: center;
     color: var(--black-light);
+}
+.slider_head .refresh{
+    position: absolute;
+    top: 4px;
+    right: 8px;
 }
 .portfolio .slide_card{
     height: 576px;
