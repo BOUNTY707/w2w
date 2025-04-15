@@ -208,44 +208,8 @@ export default function PortfolioSection() {
             <SwiperSlide>
               <div className="slide_card">
                 <iframe
-                  src="https://uniqueline.uz"
-                  title="uniqueline.uz"
-                  className="site_iframe"
-                ></iframe>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="slide_card">
-                <iframe
                   src="https://online.alisherisaev.uz/"
                   title="online.alisherisaev.uz"
-                  className="site_iframe"
-                ></iframe>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="slide_card">
-                <iframe
-                  src="https://premiumlogistics.uz/"
-                  title="premiumlogistics.uz"
-                  className="site_iframe"
-                ></iframe>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="slide_card">
-                <iframe
-                  src="https://voltauto.uz/"
-                  title="voltauto.uz"
-                  className="site_iframe"
-                ></iframe>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="slide_card">
-                <iframe
-                  src="https://profex.uz/"
-                  title="profex.uz"
                   className="site_iframe"
                 ></iframe>
               </div>
