@@ -86,6 +86,16 @@ export default function AboutSection() {
                     </a>
                   ))}
                 </motion.div>
+                <motion.div className="team_imgs"
+                  animate={{ x: ["0%", "-50%"] }}
+                  transition={{ repeat: Infinity, duration: 40, ease: "linear" }}
+                >
+                  {[...images, ...images, ...images].map((img, index) => (
+                    <a href="#!" key={index}>
+                      <img src={img} alt="productive" />
+                    </a>
+                  ))}
+                </motion.div>
               </div>
             </div>
 

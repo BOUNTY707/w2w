@@ -35,22 +35,22 @@
 }
 
 .about_cards .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 40px;
-    padding: 40px 0;
-    border-radius: 30px;
-    background: var(--grey);
-    height: 100%;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 40px 0;
+  border-radius: 30px;
+  background: var(--grey);
+  height: 100%;
+  overflow: hidden;
 }
 
 .about_cards .texts {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0px 40px;
 }
 
 .about_cards .texts b {
@@ -74,18 +74,20 @@
   align-items: start;
   gap: 7px;
 }
+
 .about_cards .team_imgs {
-    position: relative;
-    display: flex;
-    align-items: center;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
+
 .about_cards .team_imgs img {
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    object-fit: cover;
-    margin-right: -15px;
-    border: 2px solid #FFF;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-right: -15px;
+  border: 2px solid #FFF;
 }
 
 
@@ -164,6 +166,7 @@
 
 .about_video {
   position: relative;
+
   //   overflow: hidden;
   &::after {
     content: "Recording!";
@@ -217,18 +220,20 @@
 // Media queries
 @media (max-width: 1170px) {
 
-    .about_block .about_cards,
-    .about_block .top {
-        grid-template-columns: 40% 57%;
-        gap: 20px;
-    }
-    .about_cards .card{
-        align-items: center;
-        text-align: center;
-    }
+  .about_block .about_cards,
+  .about_block .top {
+    grid-template-columns: 40% 57%;
+    gap: 20px;
+  }
+
+  .about_cards .card {
+    align-items: center;
+    text-align: center;
+  }
 }
 
 @media (max-width: 1075px) {
+
   .about_block .about_cards,
   .about_block .top {
     grid-template-columns: 100%;
@@ -250,13 +255,14 @@
     padding: 30px;
     height: auto;
   }
+
   .about_video:after {
     border-radius: 20px;
   }
 
-    .about_cards .texts {
-        gap: 10px;
-    }
+  .about_cards .texts {
+    gap: 10px;
+  }
 
   .about_video .play_btn {
     right: 50%;
@@ -265,11 +271,12 @@
     width: 100px;
     height: 100px;
     border: 6px solid var(--grey);
+    box-shadow:0px 4px 18px 0px rgba(0, 0, 0, 0.3019607843);
   }
 
-    .about_video .play_btn svg {
-        width: 25px;
-    }
+  .about_video .play_btn svg {
+    width: 25px;
+  }
 
   .about_cards .team_btn img {
     width: 30px;
@@ -293,18 +300,18 @@
     text-align: center;
   }
 
-    .about {
-        padding: 40px 0px 60px;
-    }
+  .about {
+    padding: 40px 0px 60px;
+  }
 
-    .about_cards .team .team_btn .minus, 
-    .about_cards .team .team_btn .plus{
-        line-height: 56px;
-    }
+  .about_cards .team .team_btn .minus,
+  .about_cards .team .team_btn .plus {
+    line-height: 56px;
+  }
 }
 
 @media (max-width: 400px) {
-    .about_cards .team_btn img {
-        width: 25px;
-    }
+  .about_cards .team_btn img {
+    width: 25px;
+  }
 }
