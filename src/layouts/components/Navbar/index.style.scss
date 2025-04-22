@@ -211,6 +211,9 @@ header .bars {
 header .bars:hover {
     background: var(--grey3);
 }
+header .bars svg path{
+    fill: #000000;
+}
 
 header .bars img {
     width: 30px;
@@ -323,12 +326,15 @@ header .header_mob.active {
 }
 .dark header .bars,
 .dark .head_block .language {
-  border-color: #07E7B7;
-  background: transparent;
-  color: var(--white);
+    border-color: #07E7B7;
+    background: transparent;
+    color: var(--white);
 }
 .dark .head_block .language:hover {
-  background: transparent;
+    background: transparent;
+}
+.dark header .bars svg path{
+    fill: var(--white);
 }
 
 // Media start
