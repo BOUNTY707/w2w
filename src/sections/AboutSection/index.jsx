@@ -17,55 +17,55 @@ import avatarMoxira from "../../assets/images/avatar-moxira.jpg";
 import videoWork from "../../assets/videos/work-video.mp4";
 
 
+
 export default function AboutSection() {
   const { translations } = useContext(LanguageContext);
 
-  // Vide play
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
+
   const handlePlayPause = () => {
     if (videoRef.current) {
-      if (videoRef.current.paused) {
-        videoRef.current.play();
+      const video = videoRef.current;
+      if (video.paused) {
+        video.play();
         setIsPlaying(true);
       } else {
-        videoRef.current.pause();
+        video.pause();
         setIsPlaying(false);
       }
     }
   };
-  const handleVideoEnd = () => {
-    setIsPlaying(false); 
-  };
 
-  // Avatar add and remove
-  const [isExpanded, setIsExpanded] = useState(false);
+  const handleVideoEnd = () => setIsPlaying(false);
 
-  const toggleTeamVisibility = () => {
-    setIsExpanded(!isExpanded);
-  };
-
-
-  const images = [
+  const images = useRef([
     avatarJavohir, avatarNuriddin, avatarFazliddin, avatarOyimtillo,
     avatarIbrokhim, avatarZilola, avatarAzamat, avatarMoxira, avatarSulton
-  ]
-
+  ]).current;
 
   return (
     <div className="about" id="about">
       <div className="container">
         <div className="about_block">
           <div className="top">
-            <h2 className="main_title title" data-aos="fade-right" dangerouslySetInnerHTML={{
-                __html: translations["about.title"].replaceAll("{","<span>").replaceAll("}","</span>")
-                }}>
-            </h2>
-            <p data-aos="fade-left"
+            <h2
+              className="main_title title"
+              data-aos="fade-right"
               dangerouslySetInnerHTML={{
-                __html: translations["about.desc"].replaceAll("{","<span>").replaceAll("}","</span>")
-              }}>
-            </p>
+                __html: translations["about.title"]
+                  .replaceAll("{", "<span>")
+                  .replaceAll("}", "</span>")
+              }}
+            />
+            <p
+              data-aos="fade-left"
+              dangerouslySetInnerHTML={{
+                __html: translations["about.desc"]
+                  .replaceAll("{", "<span>")
+                  .replaceAll("}", "</span>")
+              }}
+            />
           </div>
 
           <div className="about_cards">
@@ -76,23 +76,14 @@ export default function AboutSection() {
               </div>
 
               <div className="team">
-                <motion.div className="team_imgs"
+                <motion.div
+                  className="team_imgs"
                   animate={{ x: ["0%", "-50%"] }}
                   transition={{ repeat: Infinity, duration: 40, ease: "linear" }}
                 >
-                  {[...images, ...images, ...images].map((img, index) => (
-                    <a href="#!" key={index}>
-                      <img src={img} alt="productive" />
-                    </a>
-                  ))}
-                </motion.div>
-                <motion.div className="team_imgs"
-                  animate={{ x: ["0%", "-50%"] }}
-                  transition={{ repeat: Infinity, duration: 40, ease: "linear" }}
-                >
-                  {[...images, ...images, ...images].map((img, index) => (
-                    <a href="#!" key={index}>
-                      <img src={img} alt="productive" />
+                  {Array(3).fill(images).flat().map((img, index) => (
+                    <a href="#!" key={`team-${index}-${img}`}>
+                      <img src={img} loading="lazy" alt="productive" />
                     </a>
                   ))}
                 </motion.div>
@@ -101,7 +92,13 @@ export default function AboutSection() {
 
             <div className="about_video" data-aos="fade-left">
               <div className="video">
-                <video ref={videoRef} onEnded={handleVideoEnd}>
+                <video
+                  ref={videoRef}
+                  onEnded={handleVideoEnd}
+                  muted
+                  playsInline
+                  preload="metadata"
+                >
                   <source src={videoWork} type="video/mp4" />
                 </video>
               </div>

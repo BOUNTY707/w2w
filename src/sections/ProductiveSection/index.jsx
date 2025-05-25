@@ -58,7 +58,7 @@ export default function ProductiveSection() {
             >
               {[...images, ...images].map((img, index) => (
                 <div key={index} className="productive_img">
-                  <img src={img} alt="productive" />
+                  <img src={img} alt="productive" loading="lazy" />
                 </div>
               ))}
             </motion.div>
@@ -70,7 +70,7 @@ export default function ProductiveSection() {
             >
               {[...images, ...images].map((img, index) => (
                 <div key={index} className="productive_img">
-                  <img src={img} alt="productive" />
+                  <img src={img} alt="productive" loading="lazy" />
                 </div>
               ))}
             </motion.div>

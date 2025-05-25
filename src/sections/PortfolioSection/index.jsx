@@ -37,7 +37,7 @@ export default function PortfolioSection() {
         if (activeSlide) {
           const iframe = activeSlide.querySelector("iframe");
           if (iframe && siteNameRef.current) {
-            siteNameRef.current.textContent = iframe.title; // Span'ga yozish
+            siteNameRef.current.textContent = iframe.title; 
           }
         }
       }, 30);
@@ -62,7 +62,7 @@ export default function PortfolioSection() {
     if (activeSlide) {
       const iframe = activeSlide.querySelector("iframe");
       if (iframe) {
-        iframe.src = iframe.src;
+        iframe.src = iframe.src; // Reload iframe
       }
     }
   };
@@ -76,7 +76,6 @@ export default function PortfolioSection() {
       }
     }
   };
-  
 
   return (
     <div className="portfolio" id="portfolio">
@@ -104,44 +103,70 @@ export default function PortfolioSection() {
         <div className="slider">
           <div className="slider_head">
             <div className="left">
-              <div className="dots_btn">
-                <img src={dots} alt="Icons" />
+              <div className="dots_btn" aria-label="Open menu">
+                <img src={dots} alt="Menu dots" loading="lazy" />
               </div>
-              <button className="siteMenu_btn">
-                <img src={siteMenu} alt="Icons" />
+              <button
+                className="siteMenu_btn"
+                aria-label="Site menu"
+                role="button"
+              >
+                <img src={siteMenu} alt="Site menu icon" loading="lazy" />
               </button>
               <div className="slider_arrows">
-                <button className="arrow-left swiper-btn-prev">
-                  <img src={vectorLeft} alt="vectorLeft" />
+                <button
+                  className="arrow-left swiper-btn-prev"
+                  aria-label="Previous slide"
+                >
+                  <img src={vectorLeft} alt="Previous slide" loading="lazy" />
                 </button>
-                <button className="arrow-right swiper-btn-next">
-                  <img src={vectorRight} alt="vectorRight" />
+                <button
+                  className="arrow-right swiper-btn-next"
+                  aria-label="Next slide"
+                >
+                  <img src={vectorRight} alt="Next slide" loading="lazy" />
                 </button>
               </div>
-              <button className="secuty_btn">
-                <img src={security} alt="Icons" />
+              <button
+                className="secuty_btn"
+                aria-label="Security options"
+                role="button"
+              >
+                <img src={security} alt="Security icon" loading="lazy" />
               </button>
 
               <div className="slider_name">
                 <div className="site_name">
-                  <img className="lock" src={lock} alt="Refresh" />
+                  <img className="lock" src={lock} alt="Lock icon" loading="lazy" />
                   <span ref={siteNameRef}>adm.uz</span>
                 </div>
-                <button className="refresh" onClick={refreshIframe}>
-                  <img src={refresh} alt="Refresh" />
+                <button
+                  className="refresh"
+                  onClick={refreshIframe}
+                  aria-label="Refresh site"
+                >
+                  <img src={refresh} alt="Refresh site" loading="lazy" />
                 </button>
               </div>
             </div>
 
             <div className="right">
-              <button className="share" onClick={openInNewTab}>
-                <img src={share} alt="Share" />
+              <button
+                className="share"
+                onClick={openInNewTab}
+                aria-label="Open in new tab"
+              >
+                <img src={share} alt="Share site" loading="lazy" />
               </button>
-              <button className="plus">
-                <img src={sitePlus} alt="Plus" />
+              <button className="plus" aria-label="Add to collection">
+                <img src={sitePlus} alt="Add to collection" loading="lazy" />
               </button>
-              <button className="copy" onClick={copyToClipboard}>
-                <img src={copy} alt="Copy" />
+              <button
+                className="copy"
+                onClick={copyToClipboard}
+                aria-label="Copy site name"
+              >
+                <img src={copy} alt="Copy site name" loading="lazy" />
               </button>
             </div>
           </div>
@@ -163,9 +188,20 @@ export default function PortfolioSection() {
             <SwiperSlide>
               <div className="slide_card">
                 <iframe
+                  src="https://www.topskill.uz/"
+                  title="topskill.uz"
+                  className="site_iframe"
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slide_card">
+                <iframe
                   src="https://adm.uz/"
                   title="adm.uz"
                   className="site_iframe"
+                  loading="lazy"
                 ></iframe>
               </div>
             </SwiperSlide>
@@ -175,6 +211,7 @@ export default function PortfolioSection() {
                   src="https://www.mitacademy.uz/"
                   title="mitacademy.uz"
                   className="site_iframe"
+                  loading="lazy"
                 ></iframe>
               </div>
             </SwiperSlide>
@@ -184,6 +221,7 @@ export default function PortfolioSection() {
                   src="https://www.thedoors.uz/"
                   title="thedoors.uz"
                   className="site_iframe"
+                  loading="lazy"
                 ></iframe>
               </div>
             </SwiperSlide>
@@ -193,15 +231,7 @@ export default function PortfolioSection() {
                   src="https://nohunt.uz/"
                   title="nohunt.uz"
                   className="site_iframe"
-                ></iframe>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="slide_card">
-                <iframe
-                  src="https://www.topskill.uz/"
-                  title="topskill.uz"
-                  className="site_iframe"
+                  loading="lazy"
                 ></iframe>
               </div>
             </SwiperSlide>
@@ -211,16 +241,17 @@ export default function PortfolioSection() {
                   src="https://online.alisherisaev.uz/"
                   title="online.alisherisaev.uz"
                   className="site_iframe"
+                  loading="lazy"
                 ></iframe>
               </div>
             </SwiperSlide>
           </Swiper>
           <div className="swiper-pagination"></div>
           <div className="swiper-button-next swiper-btn-next">
-            <img src={arrowRight} alt="Next" />
+            <img src={arrowRight} alt="Next" loading="lazy" />
           </div>
           <div className="swiper-button-prev swiper-btn-prev">
-            <img src={arrowLeft} alt="Previous" />
+            <img src={arrowLeft} alt="Previous" loading="lazy" />
           </div>
         </div>
       </div>

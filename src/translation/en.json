@@ -120,6 +120,7 @@
 
     "contact.title": "Get {Expert} Advice – Request a {Free Consultation} Today!",
     "form.name": "Name",
+    "form.email": "Email*",
     "form.phone": "Phone",
     "form.message": "Enter the message...",
     "form.btn": "Free consultation",
