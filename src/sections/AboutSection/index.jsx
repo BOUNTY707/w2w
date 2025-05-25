@@ -1,8 +1,5 @@
 import React, { useContext, useRef, useState } from "react";
-<<<<<<< HEAD
 import { motion } from "framer-motion";
-=======
->>>>>>> 3ef29a325898de486c047745c63e83177dfede6a
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
 import { LanguageContext } from "../../translation/context/LanguageContext";
@@ -20,8 +17,6 @@ import avatarMoxira from "../../assets/images/avatar-moxira.jpg";
 import videoWork from "../../assets/videos/work-video.mp4";
 
 
-<<<<<<< HEAD
-
 export default function AboutSection() {
   const { translations } = useContext(LanguageContext);
 
@@ -36,34 +31,16 @@ export default function AboutSection() {
         setIsPlaying(true);
       } else {
         video.pause();
-=======
-export default function AboutSection() {
-  const { translations } = useContext(LanguageContext);
-
-  // Vide play
-  const videoRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const handlePlayPause = () => {
-    if (videoRef.current) {
-      if (videoRef.current.paused) {
-        videoRef.current.play();
-        setIsPlaying(true);
-      } else {
-        videoRef.current.pause();
->>>>>>> 3ef29a325898de486c047745c63e83177dfede6a
         setIsPlaying(false);
       }
     }
   };
-<<<<<<< HEAD
-
-  const handleVideoEnd = () => setIsPlaying(false);
 
   const images = useRef([
     avatarJavohir, avatarNuriddin, avatarFazliddin, avatarOyimtillo,
     avatarIbrokhim, avatarZilola, avatarAzamat, avatarMoxira, avatarSulton
   ]).current;
-=======
+
   const handleVideoEnd = () => {
     setIsPlaying(false); 
   };
@@ -73,15 +50,11 @@ export default function AboutSection() {
   const toggleTeamVisibility = () => {
     setIsExpanded(!isExpanded);
   };
-  
->>>>>>> 3ef29a325898de486c047745c63e83177dfede6a
-
   return (
     <div className="about" id="about">
       <div className="container">
         <div className="about_block">
           <div className="top">
-<<<<<<< HEAD
             <h2
               className="main_title title"
               data-aos="fade-right"
@@ -99,17 +72,6 @@ export default function AboutSection() {
                   .replaceAll("}", "</span>")
               }}
             />
-=======
-            <h2 className="main_title title" data-aos="fade-right" dangerouslySetInnerHTML={{
-                __html: translations["about.title"].replaceAll("{","<span>").replaceAll("}","</span>")
-                }}>
-            </h2>
-            <p data-aos="fade-left"
-              dangerouslySetInnerHTML={{
-                __html: translations["about.desc"].replaceAll("{","<span>").replaceAll("}","</span>")
-              }}>
-            </p>
->>>>>>> 3ef29a325898de486c047745c63e83177dfede6a
           </div>
 
           <div className="about_cards">
@@ -120,7 +82,6 @@ export default function AboutSection() {
               </div>
 
               <div className="team">
-<<<<<<< HEAD
                 <motion.div
                   className="team_imgs"
                   animate={{ x: ["0%", "-50%"] }}
@@ -132,27 +93,11 @@ export default function AboutSection() {
                     </a>
                   ))}
                 </motion.div>
-=======
-                <div className="team_imgs">
-                  {[avatarJavohir, avatarNuriddin, avatarFazliddin, avatarOyimtillo, avatarIbrokhim, avatarZilola, avatarAzamat, avatarMoxira, avatarSulton]
-                    .slice(0, isExpanded ? undefined : 4)
-                    .map((avatar, index) => (
-                      <a href="#!" key={index}>
-                        <img src={avatar} alt="" />
-                      </a>
-                    ))}
-                </div>
-                  <button className={`team_btn ${isExpanded ? "active" : ""}`} onClick={toggleTeamVisibility}>
-                    <span className="plus">+</span>
-                    <span className="minus">−</span>
-                  </button>
->>>>>>> 3ef29a325898de486c047745c63e83177dfede6a
               </div>
             </div>
 
             <div className="about_video" data-aos="fade-left">
               <div className="video">
-<<<<<<< HEAD
                 <video
                   ref={videoRef}
                   onEnded={handleVideoEnd}
@@ -160,9 +105,6 @@ export default function AboutSection() {
                   playsInline
                   preload="metadata"
                 >
-=======
-                <video ref={videoRef} onEnded={handleVideoEnd}>
->>>>>>> 3ef29a325898de486c047745c63e83177dfede6a
                   <source src={videoWork} type="video/mp4" />
                 </video>
               </div>
