@@ -21,7 +21,7 @@
     "portfolio.desc": "The average spending on our projects is {$250,000} up until the {year 2025.}",
 
     "productive.title": "Turning Your {Business} Digital",
-    "productive.desc": "We provide excellent opportunities, engaging challenges, and valuable experience.",
+    "productive.desc": "We provide excellent opportunities,engaging challenges, and valuable experience.",
     "productive.btn": "Let’s start your project",
 
     "serv.title": "{Servic}es",
@@ -90,8 +90,6 @@
     "price.btn": "Let’s start your project",
 
     "testim.title": "{Revi}ews",
-<<<<<<< HEAD
-
     "testimCards": [
         {
             "id": 1,
@@ -115,22 +113,17 @@
             "desc": "Working with Win to Win has been an outstanding experience. The company showcases a high level of professionalism and responsibility, offering innovative solutions in IT and marketing. The W2W team dives deep into clients' needs, providing not just standard services but well-thought-out strategies focused on real results. Their attention to detail, efficiency, and transparency throughout the process are truly commendable. If you're looking for a reliable partner to elevate your business in the digital space, W2W is definitely worth considering!"
         }
     ],
-=======
-    "testim.card_title": "A Trusted Partner for Digital Success!",
+
+    "testim.card_title": "A Trusted Partnerfor Digital Success!",
     "testim.card_desc": "Working with Win to Win has been an outstanding experience. The company showcases a high level of professionalism and responsibility, offering innovative solutions in IT and marketing. The W2W team dives deep into clients' needs, providing not just standard services but well-thought-out strategies focused on real results.  Their attention to detail, efficiency, and transparency throughout the process are truly commendable. If you're looking for a reliable partner to elevate your business in the digital space, W2W is definitely worth considering!",
     "testim.card_name": "Nuriddin Abdumalikov",
     "testim.card_work": "COO of W2W",
->>>>>>> 3ef29a325898de486c047745c63e83177dfede6a
 
     "work.title": "Let’s {start working!}",
     "work.btn": "Free consultation",
 
     "contact.title": "Get {Expert} Advice – Request a {Free Consultation} Today!",
     "form.name": "Name",
-<<<<<<< HEAD
-    "form.email": "Email*",
-=======
->>>>>>> 3ef29a325898de486c047745c63e83177dfede6a
     "form.phone": "Phone",
     "form.message": "Enter the message...",
     "form.btn": "Free consultation",
