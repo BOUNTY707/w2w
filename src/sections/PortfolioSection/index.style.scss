@@ -29,6 +29,7 @@
 }
 
 .portfolio .slider {
+<<<<<<< HEAD
     position: relative;
     width: 1100px;
     margin: 0 auto;
@@ -36,6 +37,10 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 1100px 576px;
+=======
+    max-width: 884px;
+    margin: 0 auto;
+>>>>>>> 3ef29a325898de486c047745c63e83177dfede6a
 }
 
 .portfolio .slide_img img,
@@ -91,7 +96,10 @@
     bottom: 50px;
     top: auto;
     z-index: 2;
+<<<<<<< HEAD
     width: 80px;
+=======
+>>>>>>> 3ef29a325898de486c047745c63e83177dfede6a
 }
 
 .portfolio .swiper-button-prev::after,
@@ -100,6 +108,7 @@
 }
 
 .portfolio .swiper-button-prev {
+<<<<<<< HEAD
     left: 200px;
 }
 
@@ -178,6 +187,13 @@
     transform: scale(0.5);
     transform-origin: top left;
     background: #FFF;
+=======
+    left: 130px;
+}
+
+.portfolio .swiper-button-next {
+    right: 130px;
+>>>>>>> 3ef29a325898de486c047745c63e83177dfede6a
 }
 
 
@@ -214,17 +230,25 @@
     .portfolio .block {
         grid-template-columns: 48% 48%;
     }
+<<<<<<< HEAD
     .portfolio .slider{
         zoom: .7;
     }
 }
 
 @media (max-width: 776px) {
+=======
+}
+
+@media (max-width: 776px) {
+
+>>>>>>> 3ef29a325898de486c047745c63e83177dfede6a
     .portfolio .portfolio_img img,
     .portfolio .portfolio_img {
         height: 280px;
         border-radius: 20px;
     }
+<<<<<<< HEAD
     .portfolio .slider {
         zoom: 0.6;
     }
@@ -234,6 +258,8 @@
     .portfolio .slider{
         zoom: .5;
     }
+=======
+>>>>>>> 3ef29a325898de486c047745c63e83177dfede6a
 }
 
 @media (max-width: 576px) {
@@ -245,7 +271,11 @@
 
     .portfolio .swiper-button-next,
     .portfolio .swiper-button-prev {
+<<<<<<< HEAD
         bottom: 70px;
+=======
+        bottom: 40px;
+>>>>>>> 3ef29a325898de486c047745c63e83177dfede6a
         padding: 8px 30px;
     }
 
@@ -254,12 +284,23 @@
         width: 30px;
     }
 
+<<<<<<< HEAD
+=======
+    .portfolio .swiper-button-next {
+        right: 0px;
+    }
+
+    .portfolio .swiper-button-prev {
+        left: 0px;
+    }
+>>>>>>> 3ef29a325898de486c047745c63e83177dfede6a
 
     .portfolio .portfolio_text {
         font-size: 18px;
         line-height: 24px;
         max-width: 420px;
     }
+<<<<<<< HEAD
 }
 
 @media (max-width: 550px) {
@@ -278,4 +319,6 @@
     .portfolio .slider{
         left: -150px;
     }
+=======
+>>>>>>> 3ef29a325898de486c047745c63e83177dfede6a
 }

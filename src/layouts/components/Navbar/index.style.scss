@@ -211,9 +211,12 @@ header .bars {
 header .bars:hover {
     background: var(--grey3);
 }
+<<<<<<< HEAD
 header .bars svg path{
     fill: #000000;
 }
+=======
+>>>>>>> 3ef29a325898de486c047745c63e83177dfede6a
 
 header .bars img {
     width: 30px;
@@ -326,6 +329,7 @@ header .header_mob.active {
 }
 .dark header .bars,
 .dark .head_block .language {
+<<<<<<< HEAD
     border-color: #07E7B7;
     background: transparent;
     color: var(--white);
@@ -335,6 +339,14 @@ header .header_mob.active {
 }
 .dark header .bars svg path{
     fill: var(--white);
+=======
+  border-color: #07E7B7;
+  background: transparent;
+  color: var(--white);
+}
+.dark .head_block .language:hover {
+  background: transparent;
+>>>>>>> 3ef29a325898de486c047745c63e83177dfede6a
 }
 
 // Media start

@@ -6,7 +6,10 @@ import logo from "../../../assets/images/logo.svg";
 import instagram from "../../../assets/images/instagram.svg";
 import youtube from "../../../assets/images/youtube.svg";
 import linkedin from "../../../assets/images/linkedin.svg";
+import youtube from "../../../assets/images/youtube.svg";
+import linkedin from "../../../assets/images/linkedin.svg";
 import facebook from "../../../assets/images/facebook.svg";
+import "./index.style.scss";
 import "./index.style.scss";
 
 export default function Footer() {
