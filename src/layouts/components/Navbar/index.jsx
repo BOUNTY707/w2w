@@ -18,7 +18,6 @@ export default function Navbar() {
     setHeadIsActive(!headIsActive);
   };
 
-  // Body ga "no-scroll" class qo‘shish va olib tashlash
   useEffect(() => {
     if (headIsActive) {
       document.body.classList.add("no-scroll");
@@ -85,9 +84,9 @@ export default function Navbar() {
               +998 95 535 35 55
             </a>
 
-            {/* <div className="language_wrap">
+            <div className="language_wrap">
               <button className="language">
-                {language === "en" ? "EN" : "RU"}
+                {language.toUpperCase()} {/* EN / RU / UZ */}
               </button>
 
               <div className="tabs">
@@ -103,8 +102,14 @@ export default function Navbar() {
                 >
                   RU
                 </button>
+                <button
+                  className={`tab ${language === "uz" ? "active" : ""}`}
+                  onClick={() => changeLanguage("uz")}
+                >
+                  UZ
+                </button>
               </div>
-            </div> */}
+            </div>
 
             <button
               className={`bars ${headIsActive ? "active" : ""}`}

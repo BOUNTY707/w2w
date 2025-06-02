@@ -1,0 +1,130 @@
+{
+    "nav.link.home": "Asosiy sahifa",
+    "nav.link.about": "Biz haqimizda",
+    "nav.link.portfolio": "Portfolio",
+    "nav.link.contact": "Kontakt",
+    "nav.link.reviews": "Izohlar",
+
+    "home.title": "{Win} dan {Win} gacha yechimlar raqamli o'zgartirish orqali",
+    "home.btn": "Loyihangizni boshlang",
+    "partners.desc": "Mamlakatning eng yirik brendlari ishonch bildirishadi.",
+   
+    "traffic.title": "Ko'p loyihalar",
+    "traffic.sales": "Ko'proq tashrif buyuruvchilarni va sotuvni jalb qiling",
+    "traffic.more": "{Sizning biznesingizni} raqamli qilish",
+
+    "about.title": "{Biz haqimizda}",
+    "about.desc": "{WIN TO WIN} kompaniyasida bizning maqsadimiz Markaziy Osiyoda texnologik o'sish va innovatsiyalarni rivojlantirishdir. Yetakchi IT аutsorsing kompaniyasi sifatida, biz bizneslarni qo'llab-quvvatlaydigan va sanoatlarni o'zgartiradigan zamonaviy yechimlarni taqdim etishga tayyormiz.",
+    "about.teammates": "Jamoa a'zolari",
+
+    "portfolio.title": "{Loyihalar}",
+    "portfolio.desc":"Bizning loyihalarimizga sarflanadigan o'rtacha summa {$250,000} bo'lib, {2025-yilgacha} davom etadi.",
+
+    "productive.title": "Sizning {Biznesingizni} raqamli qilish",
+    "productive.desc": "Biz ajoyib imkoniyatlar, qiziqarli vazifalar va foydali tajribalarni taqdim etamiz.",
+    "productive.btn": "Keling, loyihangizni boshlaylik",
+
+    "serv.title": "{Xizmat}lar",
+    "serv.info.title": "Eski yechimlar tufayli mijozlarni yo'qotayapsizmi? Biz {avtomatlashtiramiz}, ma'lumotlarni {himoya qilamiz}, va {foydani oshiramiz}.",
+    
+    "offer.title": "{Biz nima} taklif etamiz?",
+    "offer.content.btn": "Keling, loyihangizni boshlaylik.",
+    "offer.content.title": "Eski yechimlar tufayli mijozlarni yo'qotayapsizmi?",
+    "offer.content.text": "Bizning yechimlarimiz sizga yordam beradi",
+    
+    "cards": [
+        { 
+            "id": 1, 
+            "title": "01. AI (Sun'iy intellekt)",
+            "tabs": ["Yuzni tanib olish", "Sotuv menejeri", "Chatbotlar", "ntegratsiyalar", "un'iy intellekt tarjimasi"]
+        },
+        { 
+            "id": 2, 
+            "title": "02. ERP tizimi ",
+            "tabs": ["Omborxona va ta'minot zanjiri", "Kadrlar bo‘limi", "Ish jarayonlarini avtomatlashtirish", "Moliyani boshqarish", " Sotuvlar va CRM integratsiyasi"]
+        },
+        { 
+            "id": 3, 
+            "title": "03. CRM Sistema",
+            "tabs": ["Sotuvlarni kuzatish", " Ish jarayonlarini avtomatlashtirish", "Ma’lumotlar tahlili", "Hisobotlar va tahliliy xulosalar", "Marketing integratsiyasi"]
+        },
+        { 
+            "id": 4, 
+            "title": "04. Mobil ilova",
+            "tabs": ["Xavfsizlik va ma’lumotlarni himoya qilish", "Ishlash samaradorligini optimallashtirish", "Mahalliy ilovalar", " Backend integratsiyasi", "UI/UX Dizayn"]
+        },
+        { 
+            "id": 5, 
+            "title": "05. Veb-dasturlash ",
+            "tabs": ["Frontend va Backend dasturlash", "SEO optimallashtirish", "UI/UX Dizayn", "Elektron tijorat yechimlari", "Individual (buyurtma asosida) veb-saytlar"]
+        },
+        { 
+            "id": 6, 
+            "title": "06. UX/UI dizayn",
+            "tabs": [" Foydalanuvchi tiplari", "Foydalanuvchilarni o‘rganish", "Qulaylikni sinovdan o‘tkazish", "Sahifa sxemasini chizish", "Dastlabki namuna tayyorlash", "Ko‘rinish dizayni"]
+        },
+        { 
+            "id": 7, 
+            "title": "07. Brend yaratish",
+            "tabs": ["Logotip", "Presentatsiya", "Strategiya", "Illustratiyalar", "Qadoqlash va dizayn"]
+        },
+        { 
+            "id": 8, 
+            "title": "08. Aqqli uy",
+            "tabs": ["Aqlli yoritish tizimi", " Energiya tejamkorligi", " Ovoz bilan boshqarish", "IoT tizimlari bilan integratsiya", " Xavfsizlik tizimlari"]
+        },
+        { 
+            "id": 9, 
+            "title": "09. Narsalar interneti",
+            "tabs": ["Sanoatga xos yechimlar", "Avtomatlashtirish va boshqaruv", "Ma'lumotlar tahlili va xulosalar", "Aqlli qurilmalar integratsiyasi", "Masofaviy kuzatuv"]
+        },
+        { 
+            "id": 10, 
+            "title": "10. Hardware Ta'minoti",
+            "tabs": [" Korxona darajasidagi serverlar", "Saqlash yechimlari", "Xavfsizlik tizimlari", "Tarmoq uskunalari", "IT infratuzilmasini o'rnatish"]
+        }
+    ],
+
+    "price.title": "Bu yerda {narxlar ro'yxati} bo'lishi mumkin edi, lekin {bo'lmaydi}",
+    "price.desc": "Har bir vazifa o'ziga xosdir. Shuning uchun biz avval loyiha haqida so'raymiz, uning hajmi va maqsadlarini tushunib olamiz, keyin esa narxni belgilaymiz.",
+    "price.btn": "Keling, loyihangizni boshlaylik",
+
+    "testim.title": "{Izohlar}",
+
+    "testimCards": [
+        {
+            "id": 1,
+            "name": "Asror Alimov",
+            "link": "@alimov_animals",
+            "title": "Win to Win hamma narsani qulaylashtirdi!",
+            "desc": "Win to Win bilan ishlash mening biznesim uchun katta o'zgarish bo'ldi. Ular zamonaviy va funksional veb-sayt yaratdilar, bu to'liq katalog vazifasini bajaradi, mijozlarimga mavjud ekzotik hayvonlarni ko'rish, batafsil ma'lumot olish va narxlarni tekshirishni osonlashtiradi. Jamoa a'lo darajada professional bo'lib, mening ehtiyojlarimni mukammal tushunib, kutganimdan ortiq natija taqdim etdi. Ularning samaradorligi va diqqat-e'tibori butun jarayonni silliq va muammosiz o'tkazdi. Agar yuqori darajadagi raqamli mavjudlik kerak bo'lsa, Win to Win eng yaxshi tanlov!"
+        },
+        {
+            "id": 2,
+            "name": "Alisher Rustamov",
+            "link": "@alisher.rustam.expert",
+            "title": "Biznes o'sishi uchun ishonchli hamkor!",
+            "desc": "Avvalgi dasturchilar bilan bo‘lgan xafalashgan tajribadan so‘ng, men nihoyat veb-saytimi to‘liq yakunlay oladigan jamoa izlayotgandim. Win to Win nafaqat barcha yakunlanmagan ishlarni tuzatdi, balki butun loyihani takomillashtirib, kutganimdan ham ortiq natija berdi. Ularning tezligi, professionalizmi va biznes ehtiyojlarini chuqur tushunishlari meni chinakam ta’sirlantirdi. Jamoa samarali ishladi, jarayonni silliq va muammosiz o'tkazdi. Men Win to Win'ni yuqori sifatli raqamli yechimlarni izlayotgan barcha bizneslar va hamkasblarga tavsiya qilaman!"
+        },
+        {
+            "id": 3,
+            "name": "Nuriddin Abdumalikov",
+            "link": "W2W kompaniyasining bosh operatsion direktori (COO)",
+            "title": "Raqamli muvaffaqiyat uchun ishonchli hamkor!",
+            "desc": "Win to Win bilan ishlash ajoyib tajriba bo‘ldi. Kompaniya yuqori darajadagi professionalizm va mas'uliyatni namoyish etadi, IT va marketing sohalarida innovatsion yechimlar taklif qiladi. W2W jamoasi mijozlarning ehtiyojlariga chuqur kirib, faqat standart xizmatlar emas, balki haqiqiy natijalarga yo‘naltirilgan puxta o‘ylangan strategiyalar taqdim etadi. Ularning jarayon davomida diqqat-e'tibori, samaradorligi va shaffofligi chinakam e'tirofga sazovordir. Agar siz raqamli sohada biznesingizni rivojlantirish uchun ishonchli hamkor izlayotgan bo‘lsangiz, W2W albatta e'tiborga loyiq!"
+        }
+    ],
+
+    "work.title": "Keling, {ishlashni boshlaylik!}",
+    "work.btn": "Bepul konsultatsiya",
+
+    "contact.title": " {Ekspert} maslahatini oling – Bugun {bepul konsultatsiya} oling!",
+    "form.name": "Ism",
+    "form.phone": "Telefon",
+    "form.message": "Xabarni kiriting...",
+    "form.btn": "Bepul konsultatsiya",
+    "form.privacy":"Men {Maxfiylik siyosati} shartlarini qabul qilaman va {shaxsiy ma'lumotlarni} qayta ishlashga rozilik bildiraman.",
+    "footer.desc": "Win to Win solutions with digital transformation",
+    "footer.social": "Ijtimoiy tarmoq:",
+    "footer.copyRight": "Mualliflik huquqi W2W"
+}
