@@ -62,7 +62,7 @@ export default function OfferSection() {
                 </p>
                 <a className="info_btn" href="#contact">{translations["offer.content.btn"]}</a>
               </div>
-              <img className="offer_logo" src={offerLogo} alt="Offer Logo" loading="lazy" />
+              <img className="offer_logo" src={offerLogo} alt="Offer logo" loading="lazy" />
             </div>
 
             <div className="cards">
