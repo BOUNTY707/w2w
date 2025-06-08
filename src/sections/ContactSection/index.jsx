@@ -81,7 +81,7 @@ export default function ContactSection() {
                     name="name"
                     type="text"
                     id="name"
-                    placeholder={translations["form.name1"] || "Name*"}
+                    placeholder={translations["form.name"]}
                   />
                 </div>
                 <div className="inp_group">
@@ -90,7 +90,7 @@ export default function ContactSection() {
                     name="phone"
                     type="text"
                     id="phone"
-                    placeholder={translations["form.phone1"] || "Phone*"}
+                    placeholder={translations["form.phone"]}
                     ref={phoneRef}
                   />
                 </div>
@@ -101,7 +101,7 @@ export default function ContactSection() {
                     name="email"
                     type="text"
                     id="email"
-                    placeholder={translations["form.email"] || "Email*"}
+                    placeholder={translations["form.email"]}
                   />
                 </div>
 

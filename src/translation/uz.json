@@ -5,11 +5,11 @@
     "nav.link.contact": "Kontakt",
     "nav.link.reviews": "Izohlar",
 
-    "home.title": "{Win} dan {Win} gacha yechimlar raqamli o'zgartirish orqali",
+    "home.title": "{Win} to {Win} — raqamli transformatsiya asosidagi innovatsion yechimlar",
     "home.btn": "Loyihangizni boshlang",
-    "partners.desc": "Mamlakatning eng yirik brendlari ishonch bildirishadi.",
+    "partners.desc": "Mamlakatning eng yirik brendlari ishonch bildirishadi",
    
-    "traffic.title": "Ko'p loyihalar",
+    "traffic.title": "Ko'proq loyihalar",
     "traffic.sales": "Ko'proq tashrif buyuruvchilarni va sotuvni jalb qiling",
     "traffic.more": "{Sizning biznesingizni} raqamli qilish",
 
@@ -36,7 +36,7 @@
         { 
             "id": 1, 
             "title": "01. AI (Sun'iy intellekt)",
-            "tabs": ["Yuzni tanib olish", "Sotuv menejeri", "Chatbotlar", "ntegratsiyalar", "un'iy intellekt tarjimasi"]
+            "tabs": ["Yuzni tanib olish", "Sotuv menejeri", "Chatbotlar", "Integratsiyalar", "sun'iy intellekt tarjimasi"]
         },
         { 
             "id": 2, 
@@ -66,11 +66,11 @@
         { 
             "id": 7, 
             "title": "07. Brend yaratish",
-            "tabs": ["Logotip", "Presentatsiya", "Strategiya", "Illustratiyalar", "Qadoqlash va dizayn"]
+            "tabs": ["Logotip", "Prezentatsiya", "Strategiya", "Illustratsiyalar", "Qadoqlash va dizayn"]
         },
         { 
             "id": 8, 
-            "title": "08. Aqqli uy",
+            "title": "08. Aqli uy",
             "tabs": ["Aqlli yoritish tizimi", " Energiya tejamkorligi", " Ovoz bilan boshqarish", "IoT tizimlari bilan integratsiya", " Xavfsizlik tizimlari"]
         },
         { 
@@ -121,10 +121,11 @@
     "contact.title": " {Ekspert} maslahatini oling – Bugun {bepul konsultatsiya} oling!",
     "form.name": "Ism",
     "form.phone": "Telefon",
+    "form.email": "Email pochta...",
     "form.message": "Xabarni kiriting...",
     "form.btn": "Bepul konsultatsiya",
     "form.privacy":"Men {Maxfiylik siyosati} shartlarini qabul qilaman va {shaxsiy ma'lumotlarni} qayta ishlashga rozilik bildiraman.",
-    "footer.desc": "Win to Win solutions with digital transformation",
-    "footer.social": "Ijtimoiy tarmoq:",
+    "footer.desc": "Win to Win — raqamli transformatsiya asosidagi innovatsion yechimlar",
+    "footer.social": "Ijtimoiy tarmoqlar:",
     "footer.copyRight": "Mualliflik huquqi W2W"
 }

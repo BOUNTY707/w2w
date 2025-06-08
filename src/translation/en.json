@@ -7,7 +7,7 @@
 
     "home.title": "{Win} to {Win} solutions with digital transformation",
     "home.btn": "Start your project",
-    "partners.desc": "Trusted by national biggest brands.",
+    "partners.desc": "Trusted by national biggest brands",
    
     "traffic.title": "Major projects",
     "traffic.sales": "Drive More Traffic and Sales",
@@ -125,6 +125,7 @@
     "contact.title": "Get {Expert} Advice – Request a {Free Consultation} Today!",
     "form.name": "Name",
     "form.phone": "Phone",
+    "form.email": "Email",
     "form.message": "Enter the message...",
     "form.btn": "Free consultation",
     "form.privacy": "I accept the terms of the {Privacy Policy} and consent to the processing of {personal data.}",
