@@ -77,7 +77,7 @@ export default function AboutSection() {
           <div className="about_cards">
             <div className="card" data-aos="fade-right">
               <div className="texts">
-                <b>13+</b>
+                <b>20+</b>
                 <span>{translations["about.teammates"]}</span>
               </div>
 
