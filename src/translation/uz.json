@@ -127,5 +127,30 @@
     "form.privacy":"Men {Maxfiylik siyosati} shartlarini qabul qilaman va {shaxsiy ma'lumotlarni} qayta ishlashga rozilik bildiraman.",
     "footer.desc": "Win to Win — raqamli transformatsiya asosidagi innovatsion yechimlar",
     "footer.social": "Ijtimoiy tarmoqlar:",
-    "footer.copyRight": "Mualliflik huquqi W2W"
+    "footer.copyRight": "Mualliflik huquqi W2W",
+
+
+  "privacy.title": "Maxfiylik siyosati va shaxsiy ma’lumotlarni qayta ishlash {“WIN TO WIN” MCHJ}",
+  "privacy.text1": "{1. Umumiy qoidalar} 1.1. Ushbu Siyosatda “WIN TO WIN” MCHJ (bundan buyon matnda “Kompaniya”, “biz”, “bizning”) tomonidan foydalanuvchilarning va mijozlarning shaxsiy ma’lumotlarini yig‘ish, foydalanish, saqlash va himoya qilish tartiblari bayon etiladi. <br /> 1.2. Shaxsiy ma’lumotlarni qayta ishlash O‘zbekiston Respublikasi qonunchiligi hamda Yevropa Ittifoqining Umumiy ma’lumotlarni himoya qilish reglamenti (GDPR) va boshqa tegishli xalqaro standartlar asosida amalga oshiriladi. <br /> 1.3. Bizning veb-saytimizdan foydalanganingiz yoki shaxsiy ma’lumotlaringizni taqdim etganingiz bilan, siz ushbu Siyosat shartlariga rozilik bildirgan bo‘lasiz.",
+  "privacy.text2": "{2. Qanday ma’lumotlarni yig‘amiz} 2.1. Kompaniya quyidagi shaxsiy ma’lumotlar toifalarini yig‘ishi mumkin: <br /> To‘liq ism-sharif; <br /> Aloqa ma’lumotlari (telefon raqami, elektron pochta manzili, yashash manzili); <br /> Mahsulotlar yoki xizmatlar yetkazib berish manzili; <br /> To‘lov ma’lumotlari (xavfsiz to‘lov tizimlari orqali); <br /> Foydalanuvchi tomonidan ixtiyoriy ravishda taqdim etilgan boshqa ma’lumotlar (formalar, xabarlar orqali va hokazo).",
+  "privacy.text3": "{3. Shaxsiy ma’lumotlarni qayta ishlash maqsadlari} Shaxsiy ma’lumotlar faqat quyidagi maqsadlarda qayta ishlanadi: <br /> Xizmatlar ko‘rsatish va shartnomalarni bajarish; <br /> Foydalanuvchilar bilan aloqa o‘rnatish (xabarlar, buyurtma tasdiqlari va boshqalar); <br /> Xizmat sifati va veb-sayt funksionalligini yaxshilash; <br /> Yangiliklar, mahsulotlar va takliflar haqida xabar yuborish (foydalanuvchi roziligi bilan); <br /> Qonunchilik talablariga rioya qilish; <br /> Statistik va marketing tadqiqotlarini o‘tkazish.",
+  "privacy.text4": "{4. Qayta ishlashning huquqiy asoslari} Holatga qarab, shaxsiy ma’lumotlar quyidagilarga asoslangan holda qayta ishlanadi: <br /> Foydalanuvchi roziligi; <br /> Shartnomani bajarish zarurati; <br /> Qonunchilik talablariga muvofiqlik; <br /> Foydalanuvchi huquqlarini buzmaydigan kompaniya manfaatlari.",
+  "privacy.text5": "{5. Shaxsiy ma’lumotlarni saqlash va himoya qilish} 5.1. Kompaniya shaxsiy ma’lumotlarni ruxsatsiz kirish, yo‘qotish yoki o‘zgartirishdan himoya qilish uchun tegishli texnik va tashkiliy choralarni ko‘radi. <br /> 5.2. Ma’lumotlar tegishli himoya choralariga ega bo‘lgan turli mamlakatlardagi serverlarda saqlanishi mumkin. <br /> 5.3. Ma’lumotlar faqat qayta ishlash maqsadlariga erishish yoki qonun talab qilgan muddatgacha saqlanadi.",
+  "privacy.text6": "{6. Shaxsiy ma’lumotlarni uchinchi shaxslarga uzatish} Ma’lumotlar faqat quyidagi holatlarda uzatiladi: <br /> Foydalanuvchi roziligi bilan; <br /> Shartnoma majburiyatlarini bajarish uchun (masalan, logistika, to‘lov xizmatlari); <br /> Qonuniy organlar talabiga binoan; <br /> Xalqaro uzatishlar uchun – yetarli darajadagi himoya kafolatlari mavjud bo‘lsa.",
+  "privacy.text7": "{7. Foydalanuvchi huquqlari} Foydalanuvchilar quyidagi huquqlarga ega: <br /> O‘z shaxsiy ma’lumotlariga kirish; <br /> Ma’lumotlarni tuzatish yoki yangilashni so‘rash; <br /> Ma’lumotlarni cheklash yoki o‘chirishni so‘rash (agar qonun ruxsat bersa); <br /> Rozilikni istalgan vaqtda bekor qilish; <br /> Marketing maqsadlarida qayta ishlashga e’tiroz bildirish; <br /> Ma’lumotlarni himoya qilish organlariga shikoyat qilish.",
+  "privacy.text8": "{8. Cookies va o‘xshash texnologiyalar} Kompaniya cookies fayllaridan texnik ma’lumotlarni yig‘ish, sayt ishlashini yaxshilash va tahlillar o‘tkazish uchun foydalanadi. Foydalanuvchilar brauzer sozlamalari orqali cookie’larni boshqarishlari mumkin.",
+  "privacy.text9": "{9. Xalqaro ma’lumotlar uzatish} Agar ma’lumotlar mamlakat tashqarisiga uzatilsa, Kompaniya xalqaro huquq bilan tan olingan standart shartnomaviy bandlar yoki boshqa kafolatlar asosida tegishli himoyani ta’minlaydi.",
+  "privacy.text10": "{10. Siyosatga o‘zgartirishlar} Kompaniya ushbu Siyosatni istalgan vaqtda yangilashi mumkin. Uning amaldagi versiyasi veb-saytda e’lon qilinadi. Doimiy ravishda tekshirib turishingiz tavsiya etiladi.",
+  "privacy.text11": "{11. Aloqa ma’lumotlari} Shaxsiy ma’lumotlarni qayta ishlash va himoya qilish bo‘yicha savollar uchun murojaat qiling: {“WIN TO WIN” MCHJ}",
+  "privacy.address": "{Manzil:} O‘zbekiston, Mirzo Ulug‘bek MFY, Ko‘zitarnov ko‘chasi, 76-uy",
+  "privacy.phone": "{Telefon:} +998 95 535 35 55",
+  "privacy.email": "{Elektron pochta:} info@w2w.uz",
+  "privacy.person": "{Mas’ul shaxs:} Komiljonov J.Z.",
+  "privacy.tin": "{STIR:} 311939969",
+  "privacy.account": "{Hisob raqami:} 2020 8000 8072 0667 8001",
+  "privacy.bank": "{Bank:} “Kapitalbank” ATB, O’PERU filiali",
+  "privacy.code": "{MFO (Bank kodi):} 00974",
+  "privacy.code2": "{OKED (Faoliyat turi kodi):} 62010"
+
+
 }
