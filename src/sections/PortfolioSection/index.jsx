@@ -219,8 +219,8 @@ export default function PortfolioSection() {
             <SwiperSlide>
               <div className="slide_card">
                 <iframe
-                  src="https://ujlinks.uz/"
-                  title="ujlinks.uz"
+                  src="https://salesdoc.io"
+                  title="salesdoc.io"
                   className="site_iframe"
                   loading="lazy"
                 ></iframe>
