@@ -196,7 +196,7 @@ export default function PortfolioSection() {
                 ></iframe>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div className="slide_card">
                 <iframe
                   src="https://www.mitacademy.uz/"
@@ -205,7 +205,7 @@ export default function PortfolioSection() {
                   loading="lazy"
                 ></iframe>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
             <SwiperSlide>
               <div className="slide_card">
                 <iframe
@@ -216,7 +216,7 @@ export default function PortfolioSection() {
                 ></iframe>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div className="slide_card">
                 <iframe
                   src="https://nohunt.uz/"
@@ -225,7 +225,7 @@ export default function PortfolioSection() {
                   loading="lazy"
                 ></iframe>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
             <SwiperSlide>
               <div className="slide_card">
                 <iframe
