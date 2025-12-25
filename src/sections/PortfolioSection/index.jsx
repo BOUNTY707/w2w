@@ -196,16 +196,16 @@ export default function PortfolioSection() {
                 ></iframe>
               </div>
             </SwiperSlide>
-            {/* <SwiperSlide>
+            <SwiperSlide>
               <div className="slide_card">
                 <iframe
-                  src="https://www.mitacademy.uz/"
-                  title="mitacademy.uz"
+                  src="https://edumasterevent.uz"
+                  title="edumasterevent.uz"
                   className="site_iframe"
                   loading="lazy"
                 ></iframe>
               </div>
-            </SwiperSlide> */}
+            </SwiperSlide>
             <SwiperSlide>
               <div className="slide_card">
                 <iframe
@@ -216,16 +216,16 @@ export default function PortfolioSection() {
                 ></iframe>
               </div>
             </SwiperSlide>
-            {/* <SwiperSlide>
+            <SwiperSlide>
               <div className="slide_card">
                 <iframe
-                  src="https://nohunt.uz/"
-                  title="nohunt.uz"
+                  src="https://ujlinks.uz/"
+                  title="ujlinks.uz"
                   className="site_iframe"
                   loading="lazy"
                 ></iframe>
               </div>
-            </SwiperSlide> */}
+            </SwiperSlide>
             <SwiperSlide>
               <div className="slide_card">
                 <iframe
