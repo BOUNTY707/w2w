@@ -229,6 +229,16 @@ export default function PortfolioSection() {
             <SwiperSlide>
               <div className="slide_card">
                 <iframe
+                  src="https://ujlinks.uz"
+                  title="ujlinks.uz"
+                  className="site_iframe"
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slide_card">
+                <iframe
                   src="https://online.alisherisaev.uz/"
                   title="online.alisherisaev.uz"
                   className="site_iframe"
